@@ -1,0 +1,171 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<meta name="keywords" content="中国,チャイナ,CHINA,コンサルティング,マーケティング" />
+<meta name="description" content="中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)" />
+
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<script type="text/javascript" src="/js/common.js"></script>
+
+<script type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="/js/jqueryAutoHeight.js"></script>
+{literal}
+<script type="text/javascript">
+    jQuery(function($){
+      $('div.top-box').autoHeight({column:2,clear:1});
+    });
+</script>
+{/literal}
+<link rel="shortcut icon" href="common/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="common/favicon.ico" type="image/x-icon" />
+ 
+<title>中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)</title>
+</head>
+<body>
+
+<div id="container">
+{*header*}
+{include file="include/common/header.inc"}
+
+<h1><img src="/img/common/tt_notfound.jpg" alt="あなたのアクセスしようとしたページは見つかりませんでした。" /></h1>
+
+<br />
+
+<div id="contents" class="clearfix">
+{*left navi*}
+{include file="include/common/l_navi.inc"}
+
+<div id="tm-contents">
+
+<div id="top-inner" class="clearfix">
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt01.jpg" alt="中国4大ポータル記事掲載保証 PR" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_box_img01.jpg" alt="中国4大ポータル記事掲載保証 PR" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>合計200億PV/日、2.7億ユーザを誇る中国の4大ポータルサイトに貴社の記事を中国語で掲載保証するPRサービスです。</p>
+</div>
+<div><a href="/pr"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt02.jpg" alt="中国語サイト快速サービス" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_box_img02.jpg" alt="中国語サイト快速サービス" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>貴社の中国向けWEBサイトがICP登録不要で、中国北京にあるサーバーで自動的に表示され、表示速度が格段に速くなるサービスです。</p>
+</div>
+<div><a href="/rapid"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt03.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_box_img03.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>訪日中国人観光客を集客するためのお買い物クーポンサイトです。店舗様はショッピングクーポンを掲載するだけで、中国人観光客の集客が可能になります。</p>
+</div>
+<div><a href="/kujapan"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt04.jpg" alt="中国BBS口コミPR" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_blank_img.jpg" alt="中国BBS口コミPR" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>中国で人気の大手BBS掲示板で企業の商品やサービスを紹介したスレッドを立て、スレッド内の口コミを活性化させるサービスです。</p>
+</div>
+<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt05.jpg" alt="中国マイクロブログ（微博）PR" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_blank_img.jpg" alt="中国マイクロブログ（微博）PR" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>中国でフォロワー10,000人以上をもつ人気マイクロブログ（中国版Twitter）ユーザに企業の商品やサービスを紹介し、その感想をマイクロブロガー本人に紹介してもらうサービスです。</p>
+</div>
+<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt06.jpg" alt="中国人気ブロガーPR" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_blank_img.jpg" alt="中国人気ブロガーPR" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>中国で100万PVを超える人気ブロガー達に企業の商品やサービスを紹介し、その感想をブロガー本人の人気ブログを通じて紹介してもらうサービスです。</p>
+</div>
+<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt09.jpg" alt="百度知道登録" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_blank_img.jpg" alt="百度知道登録" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>百度百科同様に百度検索結果の上位表示に頻出する中国版「教えてgoo」の百度知道内で、企業の商品やサービスに関するQ&A形式でで紹介するサービスです。</p>
+</div>
+<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt08.jpg" alt="百度百科登録" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_blank_img.jpg" alt="百度百科登録" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>百度検索結果の上位表示に頻出する中国版ウィキペディアの百度百科へ正式登録を行います。</p>
+</div>
+<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="/img/index/top_tt07.jpg" alt="中国主要検索エンジンディレクトリ登録" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<img src="/img/index/top_blank_img.jpg" alt="中国主要検索エンジンディレクトリ登録" width="116" height="82" />
+</div>
+<div class="box-txt">
+<p>中国No.1検索エンジン百度、中国版のYahoo！などSEO効果の高いサイトへディレクトリへの登録申請を行います。</p>
+</div>
+<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+</div>
+</div>
+
+</div><!--#top-inner-->
+</div><!--#m-contents-->
+</div><!--#contents-->
+	
+</div><!--#container-->
+
+{*footer*}
+{include file="include/common/footer.inc"}
+
+
+</body>
+</html>
