@@ -82,7 +82,7 @@ if ( $con->isPost ){
             //shellファイル再生成
             require_once('fw/crawlerUtil.php');
             $crawler_util = new crawlerUtil();
-            $crawler_util->makeUserShell($_POST['directory'],$_POST['url'],$_POST['depth'],$_POST['domain'],$user[0]['col_direct'],$old_user_dir_name);
+            $crawler_util->makeUserShell($_POST['directory'],$_POST['url'],$_POST['depth'],$_POST['domain'],$_POST['direct'],$old_user_dir_name);
             $con->safeExitRedirect('/system/user/view/uid/'.$uid,TRUE);
         }else{
             $con->safeExitRedirect('/system/user/',TRUE);
