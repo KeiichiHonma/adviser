@@ -57,7 +57,7 @@ if ( $con->isPost ){
                 if ( mkdir( SHELL_DIR.'/'.$_POST['directory'], 0770 ) ) {
                     require_once('fw/crawlerUtil.php');
                     $crawler_util = new crawlerUtil();
-                    $crawler_util->makeUserShell($_POST['directory'],$_POST['url'],$_POST['depth'],$_POST['domain']);
+                    $crawler_util->makeUserShell($_POST['directory'],$_POST['url'],$_POST['depth'],$_POST['domain'],$_POST['direct']);
                 } else {
                     print 'ディレクトリ作成失敗2';
                     die();

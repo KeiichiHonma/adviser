@@ -74,18 +74,19 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <a href="/tool/input"><img src="/img/rapid/banner_tool2_off.jpg" alt="中国向けWEBサイトパフォーマンスツール" /></a>
 </div>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="ex03" id="ex03">
 <h2><img src="/img/rapid/tt_ex03.jpg" alt="中国語サイト快速サービスを使用して問題解決" /></h2>
 <div class="doc">
-<img src="/img/rapid/ex03_img01.jpg" alt="中国語サイト快速サービスを使用して問題解決" />
-</div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
+<ul id="light">
+<li>中国国内にサーバーがあるため、表示速度が劇的に速くなります。</li>
+<li>ICP登録が不要なため、中国人パートナーが必要ありません。</li>
+<li>中国国内にあるWEBサイトのため、サーチエンジンからインデックスされやすくなります。</li>
+<li>貴社の中国語サイトは自動で中国に移動するため、貴社の作業は何もありません。</li>
+</ul>
+<br />
+<img src="/img/rapid/service_ex.jpg" alt="" />
 </div>
 </div>
 
@@ -93,9 +94,6 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <h2><img src="/img/rapid/tt_ex04.jpg" alt="下記に該当のお客様はぜひご検討ください" /></h2>
 <div class="doc">
 <img src="/img/rapid/ex04_img01.jpg" alt="下記に該当のお客様はぜひご検討ください" />
-</div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
 </div>
 </div>
 
@@ -106,9 +104,6 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <h3 class="green">某都内大手高級ホテル中国人向けページ</h3>
 </div>
 <img src="/img/rapid/ex05_img01.jpg" alt="表示に17秒。見込み顧客であるユーザーが離脱している可能性が非常に高い。" />
-</div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
 </div>
 </div>
 
@@ -127,9 +122,6 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </tr>
 </table>
 </div>
-</div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
 </div>
 </div>
 

@@ -39,9 +39,6 @@
 <p>サイトURL：<a href="http://www.kujapan.com/" target="_blank">http://www.kujapan.com</a></p>
 </div>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="kj03" id="kj03">
@@ -67,9 +64,6 @@
 <p>欧米からの観光客の主な目的は歴史的建造物や工芸品見物なのに対し、中国人観光客は圧倒的に買い物を1番の目的として日本に訪日</p>
 </div>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="kj04" id="kj04">
@@ -81,9 +75,6 @@
 </div>
 <img src="/img/kujapan/kj04_img01.jpg" alt="" />
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="kj05" id="kj05">
@@ -94,9 +85,6 @@
 店舗様は中国人観光客集客のための割引クーポン条件をご提供ください。</p>
 </div>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="kj06" id="kj06">
@@ -105,9 +93,6 @@
 <div class="doc-indent">
 <p>訪日予定中国人観光客の疑問に答えることが出来るように、「日遊酷棒」北京コールセンターの中国人スタッフが電話サポートをしています。</p>
 </div>
-</div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
 </div>
 </div>
 
@@ -119,9 +104,6 @@
 日本国内にサーバを置いている中国向け訪日観光サイトとのアクセススピードの違いは圧倒的です。</p>
 </div>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="kj08" id="kj08">
@@ -130,9 +112,6 @@
 <div class="doc-indent">
 <p>「日遊酷棒」は中国最大のネットモールタオバオ(淘宝）の決済で使われている支付宝（アリペイ）を使用しています。中国人にとって最も身近な決済手段を取り入れることで、決済時に安心感を与えることが出来ています。</p>
 </div>
-</div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
 </div>
 </div>
 

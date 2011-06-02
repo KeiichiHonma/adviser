@@ -8,7 +8,7 @@ class crawlerUtil
     public $html_files = array();
     public $css_files = array();
 
-    public function makeUserShell($user_dir_name,$url,$depth,$allow_domains,$old_user_dir_name = null){
+    public function makeUserShell($user_dir_name,$url,$depth,$allow_domains,$direct,$old_user_dir_name = null){
         //fqdn
         $rep = str_replace('http://','',$url);
         $url_explode = explode('/',$rep);
@@ -17,6 +17,7 @@ class crawlerUtil
         }else{
             $user_fqdn = $rep;
         }
+        
         
         global $con;
         if($con->isDebug){
@@ -49,6 +50,17 @@ class crawlerUtil
         $contents .= 'rm -rf '.WGET_DIR.'/'.$user_dir_name."\n";
         $contents .= 'mkdir '.WGET_DIR.'/'.$user_dir_name."\n";
         $contents .= '/usr/local/bin/wget -P '.WGET_DIR.'/'.$user_dir_name.' -D'.$domain_string.' -N -e robots=off -nH'.$depth_string.' --page-requisites -k -o '.SHELL_DIR.'/'.$user_dir_name.'/'.WGET_MASTER_LOG.' --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"'.' -E '.$url."\n";
+
+        //direct
+        if(strlen($direct) > 0){
+            $direct_split = split("\n", $direct);
+            foreach ($direct_split as $value){
+                $contents .= '/usr/local/bin/wget -P '.WGET_DIR.'/'.$user_dir_name.' -D'.$domain_string.' -N -e robots=off -nH'.$depth_string.' --page-requisites -k --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"'.' -E '.$value."\n";
+            }
+
+        }
+
+
         $contents .= 'wait'."\n";
         $contents .= 'chown -R apache:apache '.WGET_DIR.'/'.$user_dir_name."\n";
         $contents .= '/usr/local/bin/php -f '.COMMAND_DIR.'/'.MAKE_SHELL_PHP_FILE.' '.$user_dir_name.' '.$user_fqdn."\n";

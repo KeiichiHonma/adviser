@@ -35,9 +35,6 @@
 <div class="doc">
 <img src="/img/pr/pr02_img01.jpg" alt="4つの保障" />
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="pr03" id="pr03">
@@ -59,9 +56,6 @@
 </dl>
 <p>→これらの課題を全て解決するのが中国4大ポータル記事掲載保証 PRサービスです</p>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="pr04" id="pr04">
@@ -71,9 +65,6 @@
 <h3 class="red">最大の特長は中国市場への圧倒的なリーチ力です。</h3>
 </div>
 <img src="/img/pr/pr04_img01.jpg" alt="圧倒的なリーチ力" />
-</div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
 </div>
 </div>
 
@@ -118,9 +109,6 @@
 
 </div>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="pr06" id="pr06">
@@ -136,9 +124,6 @@
 <p><img src="/img/common/ico_pdf.gif" />&nbsp;<a href="/img/pr/medialist.pdf" target="_blank">掲載可能なメディアを見る</a></p>
 </div>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="pr07" id="pr07">
@@ -149,9 +134,6 @@
 メディアに転載され、更に多くの中国人にリーチする可能性が高くなります。</p>
 </div>
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="pr08" id="pr08">
@@ -159,18 +141,12 @@
 <div class="doc">
 <img src="/img/pr/pr08_img01.jpg" alt="掲載表示例" />
 </div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
-</div>
 </div>
 
 <div class="section sec02" name="pr09" id="pr09">
 <h2><img src="/img/pr/tt_pr09.jpg" alt="料金" /></h2>
 <div class="doc">
 <img src="/img/pr/pr09_img01.jpg" alt="料金表" />
-</div>
-<div class="doc-footer">
-<a href="#"><img src="/img/common/pagetop.jpg" alt="ページトップへ戻る" /></a>
 </div>
 </div>
 

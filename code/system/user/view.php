@@ -25,6 +25,7 @@ $_POST['url'] = $user[0]['col_url'];
 $_POST['depth'] = $user[0]['col_depth'];
 $_POST['domain'] = $user[0]['col_domain'];
 $_POST['rollover'] = $user[0]['col_rollover'];
+$_POST['direct'] = $user[0]['col_direct'];
 $_POST['validate'] = $user[0]['col_validate'];
 
 $con->append();

@@ -49,10 +49,10 @@
 <div id="top-inner" class="clearfix">
 
 <div class="top-box">
-<h2><img src="/img/index/top_tt01.jpg" alt="中国4大ポータル記事掲載保証 PR" /></h2>
+<h2><a href="/pr"><img src="/img/index/top_tt01.jpg" alt="中国4大ポータル記事掲載保証 PR" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<img src="/img/index/top_box_img01.jpg" alt="中国4大ポータル記事掲載保証 PR" width="116" height="82" />
+<a href="/pr"><img src="/img/index/top_box_img01.jpg" alt="中国4大ポータル記事掲載保証 PR" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
 <p>合計200億PV/日、2.7億ユーザを誇る中国の4大ポータルサイトに貴社の記事を中国語で掲載保証するPRサービスです。</p>
@@ -62,10 +62,10 @@
 </div>
 
 <div class="top-box">
-<h2><img src="/img/index/top_tt02.jpg" alt="中国語サイト快速サービス" /></h2>
+<h2><a href="/rapid"><img src="/img/index/top_tt02.jpg" alt="中国語サイト快速サービス" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<img src="/img/index/top_box_img02.jpg" alt="中国語サイト快速サービス" width="116" height="82" />
+<a href="/rapid"><img src="/img/index/top_box_img02.jpg" alt="中国語サイト快速サービス" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
 <p>貴社の中国向けWEBサイトがICP登録不要で、中国北京にあるサーバーで自動的に表示され、表示速度が格段に速くなるサービスです。</p>
@@ -75,10 +75,10 @@
 </div>
 
 <div class="top-box">
-<h2><img src="/img/index/top_tt03.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" /></h2>
+<h2><a href="/kujapan"><img src="/img/index/top_tt03.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<img src="/img/index/top_box_img03.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" width="116" height="82" />
+<a href="/kujapan"><img src="/img/index/top_box_img03.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
 <p>訪日中国人観光客を集客するためのお買い物クーポンサイトです。店舗様はショッピングクーポンを掲載するだけで、中国人観光客の集客が可能になります。</p>
