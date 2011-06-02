@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta name="keywords" content="中国,チャイナ,CHINA,コンサルティング,マーケティング" />
-<meta name="description" content="中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)" />
+<meta name="keywords" content="中国,アクセス スピード,改善,ICP,ライセンス,サーバー,チャイナアドバイザー,china adviser" />
+<meta name="description" content="貴社の中国向けWebサイトがICP登録/ライセンス、中国へのサーバー設置が不要で表示速度が格段に速くなるサービスです。導入は簡単です。" />
 
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <script type="text/javascript" src="/js/common.js"></script>
@@ -11,7 +11,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
  
-<title>中国語サイト快速サービス | China Adviser(チャイナアドバイザー)</title>
+<title>サーバー、ICP不要で中国語サイトをアクセス改善 | チャイナアドバイザー</title>
 </head>
 <body>
 
@@ -23,10 +23,10 @@
 {*left navi*}
 {include file="include/common/l_navi.inc"}
 <div id="m-contents">
-<h1><img src="/img/rapid/ptt_ex.jpg" alt="中国語サイト快速サービス" /></h1>
+<h2><img src="/img/rapid/ptt_ex.jpg" alt="中国語サイト快速サービス" /></h2>
 
 <div class="section sec01" name="ex01" id="ex01">
-<h2><img src="/img/rapid/tt_ex01.jpg" alt="中国語サイト快速サービスとは?" /></h2>
+<h3><img src="/img/rapid/tt_ex01.jpg" alt="中国語サイト快速サービスとは?" /></h3>
 <img src="/img/rapid/ex01_img01.jpg" alt="貴社の中国向けWEBサイトの表示速度が格段に速くなるサービスです" />
 <div class="read">
 <p>貴社の中国向けWEBサイトがICP登録不要で、中国北京にあるサーバーで自動的に表示され、表示速度が格段に速くなるサービスです。日本企業の中国向けWEBサイトの多くは日本にあるサーバーで運用しているため、中国からのアクセス速度が非常に遅いことは有名です。アクセス速度が遅いために、中国からのユーザーは貴社サイトが表示される前にサイトから離脱していることがほとんどです。<br />
@@ -35,10 +35,10 @@
 </div>
 
 <div class="section sec02" name="ex02" id="ex02">
-<h2><img src="/img/rapid/tt_ex02.jpg" alt="中国向けWEBサイトの課題" /></h2>
+<h3><img src="/img/rapid/tt_ex02.jpg" alt="中国向けWEBサイトの課題" /></h3>
 <div class="doc">
 <div class="doc-title">
-<h3 class="green">1．中国からのアクセス速度が非常に遅い</h3>
+<h4 class="green">1．中国からのアクセス速度が非常に遅い</h4>
 </div>
 <div class="doc-indent">
 <p>中国に向けて訪日観光や日本商品を扱うサイトの中には、サーバーを日本国内においている場合が多くあります。<br />
@@ -49,14 +49,14 @@
 <img src="/img/rapid/ex02_img01.jpg" alt="中国からのアクセス速度が非常に遅い" />
 </div>
 <div class="doc-title">
-<h3 class="green">2.中国政府からの検閲で表示ができない可能性があります</h3>
+<h4 class="green">2.中国政府からの検閲で表示ができない可能性があります</h4>
 </div>
 <div class="doc-indent">
 <p>検閲の結果、FacebookやTwitter等、海外大手サイトでも表示を禁止されるいるものもあり、WEBサイトの中で不適切と判断されたものは全て閲覧ができない状態となります。<br />
 貴社の中国向けWEBサイトが突然表示できなくなる可能性があります。</p>
 </div>
 <div class="doc-title">
-<h3 class="green">3.IP登録を申請することができない</h3>
+<h4 class="green">3.IP登録を申請することができない</h4>
 </div>
 <div class="doc-indent">
 <p>中国では全てのホームページが政府の管理下に置かれています。したがって、個人・法人運営を問わず中国で情報を発信するすべてのホームページには、「ICP(Internet Contents Provider)サイト登録(ICP非営利性ライセンスともいいます)」の取得が義務付けられています。<br />
@@ -64,7 +64,7 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 その為、ICP登録がないと中国本土にサーバーを借りてWEBサイトを開設するこはできません。</p>
 </div>
 <div class="doc-title">
-<h3 class="green">4.中国のサーチエンジンにインデックスされにくい</h3>
+<h4 class="green">4.中国のサーチエンジンにインデックスされにくい</h4>
 </div>
 <div class="doc-indent">
 <p>中国人が使用している検索エンジンは百度といった中国独自の検索サイトとなります。<br />
@@ -77,10 +77,10 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 
 <div class="section sec02" name="ex03" id="ex03">
-<h2><img src="/img/rapid/tt_ex03.jpg" alt="サービス概要" /></h2>
+<h3><img src="/img/rapid/tt_ex03.jpg" alt="サービス概要" /></h3>
 <div class="doc">
 <div class="doc-title">
-<h3 class="green">最大の特長は貴社の中国語サイトがデザインそのままで中国国内から閲覧可能になることです。</h3>
+<h4 class="green">最大の特長は貴社の中国語サイトがデザインそのままで中国国内から閲覧可能になることです。</h4>
 </div>
 <img src="/img/rapid/service_ex.jpg" alt="" />
 
@@ -88,7 +88,7 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 
 <div class="section sec02" name="ex04" id="ex04">
-<h2><img src="/img/rapid/tt_ex04.jpg" alt="中国語サイト快速サービスを使用して問題解決" /></h2>
+<h3><img src="/img/rapid/tt_ex04.jpg" alt="中国語サイト快速サービスを使用して問題解決" /></h3>
 <div class="doc">
 <ul id="light">
 <li>中国国内にサーバーがあるため、表示速度が劇的に速くなります。</li>
@@ -100,7 +100,7 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 
 <div class="section sec02" name="ex05" id="ex05">
-<h2><img src="/img/rapid/tt_ex05.jpg" alt="下記に該当のお客様はぜひご検討ください" /></h2>
+<h3><img src="/img/rapid/tt_ex05.jpg" alt="下記に該当のお客様はぜひご検討ください" /></h3>
 <div class="doc">
 <ul id="check">
 <li>中国人向けに情報を発信したい</li>
@@ -115,17 +115,17 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 
 <div class="section sec02" name="ex06" id="ex06">
-<h2><img src="/img/rapid/tt_ex06.jpg" alt="表示速度例" /></h2>
+<h3><img src="/img/rapid/tt_ex06.jpg" alt="表示速度例" /></h3>
 <div class="doc">
 <div class="doc-title">
-<h3 class="green">某都内大手高級ホテル中国人向けページ</h3>
+<h4 class="green">某都内大手高級ホテル中国人向けページ</h4>
 </div>
 <img src="/img/rapid/ex05_img01.jpg" alt="表示に17秒。見込み顧客であるユーザーが離脱している可能性が非常に高い。" />
 </div>
 </div>
 
 <div class="section sec02" name="ex07" id="ex07">
-<h2><img src="/img/rapid/tt_ex07.jpg" alt="料金" /></h2>
+<h3><img src="/img/rapid/tt_ex07.jpg" alt="料金" /></h3>
 <div class="doc">
 <div class="doc-indent">
 <table>
@@ -143,10 +143,10 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 
 <div class="section sec02" name="ex08" id="ex08">
-<h2><img src="/img/rapid/tt_ex08.jpg" alt="スタートまでの流れ" /></h2>
+<h3><img src="/img/rapid/tt_ex08.jpg" alt="スタートまでの流れ" /></h3>
 <div class="doc">
 <div class="doc-title">
-<h3 class="green">申し込みから最短1週間でスタート。</h3>
+<h4 class="green">申し込みから最短1週間でスタート。</h4>
 </div>
 <img src="/img/rapid/ex07_img01.jpg" alt="スタートまでの流れ" />
 </div>

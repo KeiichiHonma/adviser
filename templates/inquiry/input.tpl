@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta name="keywords" content="中国,チャイナ,CHINA,コンサルティング,マーケティング" />
-<meta name="description" content="中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)" />
+<meta name="keywords" content="中国,お問い合わせ,Webマーケティング,プロモーション,アクセス,スピード,改善,チャイナアドバイザー,china adviser" />
+<meta name="description" content="チャイナアドバイザーでは中国向けWebマーケティング・プロモーション・中国人観光客の集客・アクセススピード改善などのサービスをご紹介しています。" />
 
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <link rel="stylesheet" type="text/css" href="/css/form.css" />
@@ -13,7 +13,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
  
-<title>お問い合わせ | China Adviser(チャイナアドバイザー)</title>
+<title>お問い合わせ | チャイナアドバイザー</title>
 </head>
 <body>
 
@@ -25,7 +25,7 @@
 {*left navi*}
 {include file="include/common/l_navi.inc"}
 <div id="m-contents">
-<h1><img src="/img/inquiry/ptt_inquiry.jpg" alt="お問い合わせ" /></h1>
+<h2><img src="/img/inquiry/ptt_inquiry.jpg" alt="お問い合わせ" /></h2>
 
 <img src="/img/inquiry/inquiry01_img01.jpg" alt="お気軽にお問い合わせください" />
 

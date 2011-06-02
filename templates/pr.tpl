@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta name="keywords" content="中国,チャイナ,CHINA,コンサルティング,マーケティング" />
-<meta name="description" content="中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)" />
+<meta name="keywords" content="中国,PR,プレスリリース,sina,QQ,Tencent,SOHU,netease,Webマーケティング,プロモーション,チャイナアドバイザー,china adviser" />
+<meta name="description" content="中国4大ポータル（sina、QQ等）へ貴社のプレスリース原稿が記事として掲載されることを保証するPRサービスです。1日合計200億PV、2.7億人のユーザーへリーチします。" />
 
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <script type="text/javascript" src="/js/common.js"></script>
@@ -11,7 +11,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
  
-<title>中国4大ポータル記事掲載保証 PR | China Adviser(チャイナアドバイザー)</title>
+<title>中国の大手ポータルサイトに記事広告でPR | チャイナアドバイザー</title>
 </head>
 <body>
 
@@ -23,22 +23,22 @@
 {*left navi*}
 {include file="include/common/l_navi.inc"}
 <div id="m-contents">
-<h1><img src="/img/pr/ptt_pr.jpg" alt="中国4大ポータル記事掲載保証 PR" /></h1>
+<h2><img src="/img/pr/ptt_pr.jpg" alt="中国4大ポータル記事掲載保証 PR" /></h2>
 
 <div class="section sec01" name="pr01" id="pr01">
-<h2><img src="/img/pr/tt_pr01.jpg" alt="中国4大ポータル記事掲載保証 PRとは？" /></h2>
+<h3><img src="/img/pr/tt_pr01.jpg" alt="中国4大ポータル記事掲載保証 PRとは？" /></h3>
 <img src="/img/pr/pr01_img01.jpg" alt="中国4大ポータルへの記事掲載を保証！" />
 </div>
 
 <div class="section sec02" name="pr02" id="pr02">
-<h2><img src="/img/pr/tt_pr02.jpg" alt="4つの保障" /></h2>
+<h3><img src="/img/pr/tt_pr02.jpg" alt="4つの保障" /></h3>
 <div class="doc">
 <img src="/img/pr/pr02_img01.jpg" alt="4つの保障" />
 </div>
 </div>
 
 <div class="section sec02" name="pr03" id="pr03">
-<h2><img src="/img/pr/tt_pr03.jpg" alt="中国でプロモーションをする際の6つの課題" /></h2>
+<h3><img src="/img/pr/tt_pr03.jpg" alt="中国でプロモーションをする際の6つの課題" /></h3>
 <div class="doc">
 <dl>
 <dt>1.影響力のある中国メディアへ掲載が出来ない</dt>
@@ -59,20 +59,20 @@
 </div>
 
 <div class="section sec02" name="pr04" id="pr04">
-<h2><img src="/img/pr/tt_pr04.jpg" alt="サービス概要" /></h2>
+<h3><img src="/img/pr/tt_pr04.jpg" alt="サービス概要" /></h3>
 <div class="doc">
 <div class="doc-title">
-<h3 class="red">最大の特長は中国市場への圧倒的なリーチ力です。</h3>
+<h4 class="red">最大の特長は中国市場への圧倒的なリーチ力です。</h4>
 </div>
 <img src="/img/pr/pr04_img01.jpg" alt="圧倒的なリーチ力" />
 </div>
 </div>
 
 <div class="section sec02" name="pr05" id="pr05">
-<h2><img src="/img/pr/tt_pr05.jpg" alt="掲載保証先の中国4大ポータルとは？ " /></h2>
+<h3><img src="/img/pr/tt_pr05.jpg" alt="掲載保証先の中国4大ポータルとは？ " /></h3>
 <div class="doc">
 <div class="doc-title">
-<h3 class="red">中国での露出最大化の最短の近道はこれらの4大ポータルへ露出することです。</h3>
+<h4 class="red">中国での露出最大化の最短の近道はこれらの4大ポータルへ露出することです。</h4>
 </div>
 <div class="doc-box-wrapper clearfix">
 <div class="doc-box">
@@ -112,13 +112,13 @@
 </div>
 
 <div class="section sec02" name="pr06" id="pr06">
-<h2><img src="/img/pr/tt_pr06.jpg" alt="4大ポータル以外にも掲載保証可能なカテゴリ" /></h2>
+<h3><img src="/img/pr/tt_pr06.jpg" alt="4大ポータル以外にも掲載保証可能なカテゴリ" /></h3>
 <div class="doc">
 <div class="doc-title">
-<h3 class="red">4大ポータルサイト以外にも貴社商材にマッチするカテゴリへの掲載保証が可能です。</h3>
+<h4 class="red">4大ポータルサイト以外にも貴社商材にマッチするカテゴリへの掲載保証が可能です。</h4>
 </div>
 <div class="doc-indent">
-<h4>掲載保証可能なカテゴリ</h4>
+<h5>掲載保証可能なカテゴリ</h5>
 <p>大手ポータル/地方ポータル/旅行/金融/ファッション/自動車/IT/女性/ゲーム/健康/通信/
 家具家電/エンターテインメント/医療/美容/育児</p>
 <p><img src="/img/common/ico_pdf.gif" />&nbsp;<a href="/img/pr/medialist.pdf" target="_blank">掲載可能なメディアを見る</a></p>
@@ -127,7 +127,7 @@
 </div>
 
 <div class="section sec02" name="pr07" id="pr07">
-<h2><img src="/img/pr/tt_pr07.jpg" alt="ブログやその他大手サイトにも拡散" /></h2>
+<h3><img src="/img/pr/tt_pr07.jpg" alt="ブログやその他大手サイトにも拡散" /></h3>
 <div class="doc">
 <div class="doc-indent">
 <p>4大ポータルに記事として掲載されるので、多くの中国人の目に触れます。そのため個人ブログやその他
@@ -137,21 +137,21 @@
 </div>
 
 <div class="section sec02" name="pr08" id="pr08">
-<h2><img src="/img/pr/tt_pr08.jpg" alt="掲載表示例" /></h2>
+<h3><img src="/img/pr/tt_pr08.jpg" alt="掲載表示例" /></h3>
 <div class="doc">
 <img src="/img/pr/pr08_img01.jpg" alt="掲載表示例" />
 </div>
 </div>
 
 <div class="section sec02" name="pr09" id="pr09">
-<h2><img src="/img/pr/tt_pr09.jpg" alt="料金" /></h2>
+<h3><img src="/img/pr/tt_pr09.jpg" alt="料金" /></h3>
 <div class="doc">
 <img src="/img/pr/pr09_img01.jpg" alt="料金表" />
 </div>
 </div>
 
 <div class="section sec02" name="pr10" id="pr09">
-<h2><img src="/img/pr/tt_pr10.jpg" alt="掲載の流れ" /></h2>
+<h3><img src="/img/pr/tt_pr10.jpg" alt="掲載の流れ" /></h3>
 <div class="doc">
 <img src="/img/pr/pr10_img01.jpg" alt="掲載の流れ" />
 </div>

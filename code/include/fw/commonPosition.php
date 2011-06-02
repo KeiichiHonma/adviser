@@ -18,7 +18,7 @@ class commonPosition extends positionManager
     ),
     'kujapan'=>array
     (
-        'name'=>'日遊酷棒','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+        'name'=>'日遊酷棒（リーヨウクーバン）','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
     ),
     'tool'=>array
     (

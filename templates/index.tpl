@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta name="keywords" content="中国,チャイナ,CHINA,コンサルティング,マーケティング" />
-<meta name="description" content="中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)" />
+<meta name="keywords" content="中国,Webマーケティング,プロモーション,アクセス,スピード,改善,チャイナアドバイザー,china adviser" />
+<meta name="description" content="チャイナアドバイザーでは中国向けWebマーケティング・プロモーション・中国人観光客の集客・アクセススピード改善などのサービスをご紹介しています。" />
 
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <script type="text/javascript" src="/js/common.js"></script>
@@ -20,13 +20,14 @@
 <link rel="shortcut icon" href="common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="common/favicon.ico" type="image/x-icon" />
  
-<title>中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)</title>
+<title>中国へインターネットで進出支援 | チャイナアドバイザー</title>
 </head>
 <body id="top">
 
 <div id="container">
 <div id="header" class="clearfix">
-    <h1 id="logo"><a href="/"><img src="/img/common/logo.jpg" alt="China Adviser(チャイナアドバイザー)" /></a></h1>
+    <h1>中国へインターネットで進出支援</h1>
+    <div id="logo"><a href="/"><img src="/img/common/logo.jpg" alt="China Adviser(チャイナアドバイザー)" /></a></div>
     <div id="c-navi">
         <div id="c-img">
         <img src="/img/common/contact_img01.jpg" alt="中国市場開拓を目指す企業様をサポート" />
