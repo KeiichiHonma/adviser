@@ -77,7 +77,18 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 
 <div class="section sec02" name="ex03" id="ex03">
-<h2><img src="/img/rapid/tt_ex03.jpg" alt="中国語サイト快速サービスを使用して問題解決" /></h2>
+<h2><img src="/img/rapid/tt_ex03.jpg" alt="サービス概要" /></h2>
+<div class="doc">
+<div class="doc-title">
+<h3 class="green">最大の特長は貴社の中国語サイトがデザインそのままで中国国内から閲覧可能になることです。</h3>
+</div>
+<img src="/img/rapid/service_ex.jpg" alt="" />
+
+</div>
+</div>
+
+<div class="section sec02" name="ex04" id="ex04">
+<h2><img src="/img/rapid/tt_ex04.jpg" alt="中国語サイト快速サービスを使用して問題解決" /></h2>
 <div class="doc">
 <ul id="light">
 <li>中国国内にサーバーがあるため、表示速度が劇的に速くなります。</li>
@@ -85,20 +96,26 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <li>中国国内にあるWEBサイトのため、サーチエンジンからインデックスされやすくなります。</li>
 <li>貴社の中国語サイトは自動で中国に移動するため、貴社の作業は何もありません。</li>
 </ul>
-<br />
-<img src="/img/rapid/service_ex.jpg" alt="" />
-</div>
-</div>
-
-<div class="section sec02" name="ex04" id="ex04">
-<h2><img src="/img/rapid/tt_ex04.jpg" alt="下記に該当のお客様はぜひご検討ください" /></h2>
-<div class="doc">
-<img src="/img/rapid/ex04_img01.jpg" alt="下記に該当のお客様はぜひご検討ください" />
 </div>
 </div>
 
 <div class="section sec02" name="ex05" id="ex05">
-<h2><img src="/img/rapid/tt_ex05.jpg" alt="表示速度例" /></h2>
+<h2><img src="/img/rapid/tt_ex05.jpg" alt="下記に該当のお客様はぜひご検討ください" /></h2>
+<div class="doc">
+<ul id="check">
+<li>中国人向けに情報を発信したい</li>
+<li>中国語サイトを持っている</li>
+<li>中国からのアクセス速度が遅い</li>
+<li>中国人パートナーがいない</li>
+<li>ICP登録ができない</li>
+<li>中国からのサイト閲覧者が増えない</li>
+</ul>
+
+</div>
+</div>
+
+<div class="section sec02" name="ex06" id="ex06">
+<h2><img src="/img/rapid/tt_ex06.jpg" alt="表示速度例" /></h2>
 <div class="doc">
 <div class="doc-title">
 <h3 class="green">某都内大手高級ホテル中国人向けページ</h3>
@@ -107,8 +124,8 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 </div>
 
-<div class="section sec02" name="ex06" id="ex06">
-<h2><img src="/img/rapid/tt_ex06.jpg" alt="料金" /></h2>
+<div class="section sec02" name="ex07" id="ex07">
+<h2><img src="/img/rapid/tt_ex07.jpg" alt="料金" /></h2>
 <div class="doc">
 <div class="doc-indent">
 <table>
@@ -125,8 +142,8 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 </div>
 
-<div class="section sec02" name="ex07" id="ex07">
-<h2><img src="/img/rapid/tt_ex07.jpg" alt="スタートまでの流れ" /></h2>
+<div class="section sec02" name="ex08" id="ex08">
+<h2><img src="/img/rapid/tt_ex08.jpg" alt="スタートまでの流れ" /></h2>
 <div class="doc">
 <div class="doc-title">
 <h3 class="green">申し込みから最短1週間でスタート。</h3>

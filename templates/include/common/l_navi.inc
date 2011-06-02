@@ -14,7 +14,7 @@
 <ul>
 <li><a href="/rapid#ex01">中国語サイト快速サービスとは？</a></li>
 <li><a href="/rapid#ex02">中国向けWEBサイトの課題</a></li>
-<li><a href="/rapid#ex05">表示速度例</a></li>
+<li><a href="/rapid#ex03">サービス概要</a></li>
 </ul>
 </div>
 
