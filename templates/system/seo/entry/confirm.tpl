@@ -18,7 +18,7 @@
         {include file="include/system/navi.inc"}
         <h2 class="h_title">SEO登録</h2>
         <p class="m_b10">以下の項目を確認して[変更]ボタンをクリックしてください。</p>
-        <form id="couponForm" name="couponForm" action= "{$smarty.const.ADVISERURL}/system/seo/entry/input/uid/{$user.0._id}" method="post">
+        <form id="adviserForm" name="adviserForm" action= "{$smarty.const.ADVISERURL}/system/seo/entry/input/uid/{$user.0._id}" method="post">
 
         <table id="suggest">
         <tr>

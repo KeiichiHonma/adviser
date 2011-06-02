@@ -18,7 +18,7 @@
         {include file="include/system/navi.inc"}
         <h2 class="h_title">ユーザー追加</h2>
         <p class="m_b10">以下の項目を確認して[変更]ボタンをクリックしてください。</p>
-        <form id="couponForm" name="couponForm" action= "{$smarty.const.ADVISERURL}/system/user/entry/input" method="post">
+        <form id="adviserForm" name="adviserForm" action= "{$smarty.const.ADVISERURL}/system/user/entry/input" method="post">
 
         {foreach from=$form key="group_name" item="form_data" name="form_data"}
         <table id="suggest">

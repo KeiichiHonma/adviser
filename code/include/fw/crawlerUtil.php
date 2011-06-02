@@ -20,7 +20,7 @@ class crawlerUtil
         
         global $con;
         if($con->isDebug){
-            $apache = 'apache@artemis.corp.813.co.jp';
+            $apache = 'apache@artemis.corp.iluna.co.jp';//旧ドメインでSSH認証とってます
         }else{
             $apache = 'apache@www.kujapan.com';
         }

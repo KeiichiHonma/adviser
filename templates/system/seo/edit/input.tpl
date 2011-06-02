@@ -18,7 +18,7 @@
         {include file="include/system/navi.inc"}
         <h2 class="h_title">SEO変更</h2>
         <p class="m_b10">以下の項目を入力して[確認]ボタンをクリックしてください。<span class="attention">＊</span>の項目は必須となります。</p>
-        <form id="couponForm" name="couponForm" action= "{$smarty.const.ADVISERURL}/system/seo/edit/input/uid/{$user.0._id}/sid/{$seo.0._id}" method="post">
+        <form id="adviserForm" name="adviserForm" action= "{$smarty.const.ADVISERURL}/system/seo/edit/input/uid/{$user.0._id}/sid/{$seo.0._id}" method="post">
 
         <table id="suggest">
         <tr>
