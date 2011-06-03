@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta name="keywords" content="中国,チャイナ,CHINA,コンサルティング,マーケティング" />
-<meta name="description" content="中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)" />
+<meta name="keywords" content="中国,アクセス,スピード,Webサイト,中国語,チャイナアドバイザー,china adviser" />
+<meta name="description" content="中国から見た場合、貴社の中国語ページが何秒で表示されているかご存知ですか？貴社の中国向けWebサイトの表示速度を診断します。" />
 
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <script type="text/javascript" src="/js/common.js"></script>
@@ -11,7 +11,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
  
-<title>中国向けWEBサイトパフォーマンスツール | China Adviser(チャイナアドバイザー)</title>
+<title>中国向けWebサイトパフォーマンスツール | チャイナアドバイザー</title>
 </head>
 <body>
 
@@ -34,18 +34,28 @@
     <p class="t-box6">中国から見た場合、指定サイトの表示にかかる時間は</p>
     <p class="t-box7">{$time}秒</p>
     {if $time >= 10}
-    <p class="t-box8">表示に10秒以上かかっているため、<br />
-    ご指定のサイトは中国から閲覧することが難しい状況にあります。<br />
-    サイトの表示速度に不安がある場合はご相談ください。
+    <p class="t-box8">
+ご指定のサイトは中国から閲覧することが難しい状況にあります。<br />
+サイトの表示速度に不安がある場合はご相談ください。
     </p>
     {else}
-    <p class="t-box8">中国からのアクセスは時間帯によって速く表示されたり、<br />遅く表示されたりする場合があります。<br />
-    サイトの表示速度に不安がある場合はご相談ください。
+    <p class="t-box8">
+中国からのアクセスは時間帯によって速く表示されたり、遅く表示されたりする場合があります。<br />
+サイトの表示速度に不安がある場合はご相談ください。
     </p>
     {/if}
     <div class="t-box9">
     <a href="/rapid"><img src="/img/tool/banner_express_off.jpg" alt="" /></a>
     </div>
+    <p class="t-box8">
+■参考測定数値<br />
+1秒以下：大変快速です<br />
+1 - 3秒以内：快速です<br />
+3 - 5秒以内：少々遅く感じます<br />
+5 - 10秒以内：かなり遅く感じます<br />
+10秒以上:閲覧することが困難です<br />
+    </p>
+
     <div class="t-box10">
     <a href="/tool/input"><img src="/img/tool/tool_re_input_bt_off.jpg" alt=""  class="btn" /></a>
     </div>

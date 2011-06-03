@@ -83,8 +83,7 @@ width:730px;
 float:right;
 }
 #tm-contents {
-/*width:858px;*/
-width:710px;
+width:858px;
 float:right;
 }
 /* =====================================================
@@ -93,7 +92,7 @@ float:right;
 #logo {
 width:270px;
 float:left;
-margin:8px 0 0 0px;
+margin:0px 0 0 0px;
 }
 #c-navi {
 width:254px;
@@ -312,6 +311,13 @@ padding:5px 24px 15px 24px;
 .wide-img {
 margin-bottom:20px;
 }
+#ex02 .doc p.end {
+color:#FF6600;
+font-size:131%;
+font-weight:bold;
+padding:0 0 0 0px;
+}
+
 #ex07 table {
 margin-bottom:15px;
 border-top:1px solid #AFD6E9;
@@ -456,7 +462,7 @@ margin-top:15px;
 .tool-result {
 background:url(/img/tool/tool_result.jpg) 0 0 no-repeat;
 width:585px;
-height:550px;
+height:600px;
 margin:2px auto 60px auto;
 }
 .t-box6 {
@@ -469,7 +475,7 @@ font-weight:bold;
 }
 .t-box7 {
 text-align:center;
-width:250px;
+width:150px;
 margin:4px auto 10px auto;
 border:1px solid #E4E4E4;
 font-size:232%;
@@ -478,8 +484,8 @@ color:#FF3300;
 padding:5px;
 }
 .t-box8 {
-text-align:center;
-width:400px;
+text-align:left;
+width:330px;
 margin:4px auto 20px auto;
 }
 .t-box9 {

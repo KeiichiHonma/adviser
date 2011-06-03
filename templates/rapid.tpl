@@ -70,9 +70,7 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <p>中国人が使用している検索エンジンは百度といった中国独自の検索サイトとなります。<br />
 日本にサーバーを置いたままのWEBサイトと中国にサーバーを置いているWEBサイトではではサーチエンジンのインデックスされやすさ、順位は比較になりません。</p>
 </div>
-<div class="wide-img">
-<a href="/tool/input"><img src="/img/rapid/banner_tool2_off.jpg" alt="中国向けWEBサイトパフォーマンスツール" /></a>
-</div>
+<p class="end">→これらの課題を全て解決するのが中国語サイト快速サービスです</p>
 </div>
 </div>
 
@@ -83,9 +81,24 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <h4 class="green">最大の特長は貴社の中国語サイトがデザインそのままで中国国内から閲覧可能になることです。</h4>
 </div>
 <img src="/img/rapid/service_ex.jpg" alt="" />
+</div>
+</div>
+
+<div class="section sec02" name="ex06" id="ex06">
+<h3><img src="/img/rapid/tt_ex06.jpg" alt="中国から日本のWEBサイトを見た時の表示速度例" /></h3>
+<div class="doc">
+<div class="doc-title">
+<h4 class="green">某都内大手高級ホテル中国人向けページ</h4>
+</div>
+<div class="wide-img">
+<img src="/img/rapid/ex05_img01.jpg" alt="表示に17秒。見込み顧客であるユーザーが離脱している可能性が非常に高い。" />
+</div>
+<a href="/tool/input" target="_blank"><img src="/img/rapid/banner_tool2_off.jpg" alt="中国向けWEBサイトパフォーマンスツール" /></a>
+</div>
 
 </div>
-</div>
+
+
 
 <div class="section sec02" name="ex04" id="ex04">
 <h3><img src="/img/rapid/tt_ex04.jpg" alt="中国語サイト快速サービスを使用して問題解決" /></h3>
@@ -111,16 +124,6 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <li>中国からのサイト閲覧者が増えない</li>
 </ul>
 
-</div>
-</div>
-
-<div class="section sec02" name="ex06" id="ex06">
-<h3><img src="/img/rapid/tt_ex06.jpg" alt="表示速度例" /></h3>
-<div class="doc">
-<div class="doc-title">
-<h4 class="green">某都内大手高級ホテル中国人向けページ</h4>
-</div>
-<img src="/img/rapid/ex05_img01.jpg" alt="表示に17秒。見込み顧客であるユーザーが離脱している可能性が非常に高い。" />
 </div>
 </div>
 

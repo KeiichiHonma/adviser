@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta name="keywords" content="中国,チャイナ,CHINA,コンサルティング,マーケティング" />
-<meta name="description" content="中国市場開拓を目指す企業様をサポート China Adviser(チャイナアドバイザー)" />
+<meta name="keywords" content="中国,アクセス,スピード,Webサイト,中国語,チャイナアドバイザー,china adviser" />
+<meta name="description" content="中国から見た場合、貴社の中国語ページが何秒で表示されているかご存知ですか？貴社の中国向けWebサイトの表示速度を診断します。" />
 
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <script type="text/javascript" src="/js/common.js"></script>
@@ -11,7 +11,7 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/favicon.ico" type="image/x-icon" />
  
-<title>中国向けWEBサイトパフォーマンスツール | China Adviser(チャイナアドバイザー)</title>
+<title>中国向けWebサイトパフォーマンスツール | チャイナアドバイザー</title>
 
 <script type="text/javascript" src="/js/validatejs.js"></script>
 {literal}

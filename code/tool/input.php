@@ -9,6 +9,6 @@ if($con->isPost){
         $con->safeExitRedirect('/tool/result?time='.$result);
     }
 }
-
+$con->t->assign('h1','中国向けWebサイトパフォーマンスツール');
 $con->append();
 ?>

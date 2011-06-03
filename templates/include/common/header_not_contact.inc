@@ -1,6 +1,5 @@
 <div id="header" class="clearfix">
-<h1>{$h1}</h1>
-<div id="logo"><a href="/"><img src="/img/common/logo.jpg" alt="China Adviser(チャイナアドバイザー)" /></a></div>
+<div id="logo"><h1>{$h1}</h1><a href="/"><img src="/img/common/logo.jpg" alt="China Adviser(チャイナアドバイザー)" /></a></div>
 <div id="c-navi">
 
 </div>

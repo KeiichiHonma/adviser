@@ -47,13 +47,13 @@
     <tr>
     <th>所在地<br />連絡先</th>
     <td>
-    <h3 class="subttl">東京オフィス</h3>
+    <h3 class="subttl">○東京オフィス</h3>
     〒151-0053<br />
     <p>東京都渋谷区代々木4-31-4<br />キャッスル新宿802号</p>
     <p>Tel&nbsp;:&nbsp;03-6687-0737<br />Fax:&nbsp;03-6687-0710</p>
     <p>URL:&nbsp;<a href="http://www.813.co.jp/">http://www.813.co.jp/</a><br />Mail:&nbsp;{mailto address="info@813.co.jp" encode="hex" text="info@813.co.jp"}</p>
     
-    <h3 class="subttl">北京オフィス</h3>
+    <h3 class="subttl">○北京オフィス</h3>
     <p>中国 北京市海淀区中関村大街45号興発プラザ614室</p>
     
     </td>
