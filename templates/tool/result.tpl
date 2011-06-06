@@ -32,28 +32,49 @@
 
 <div class="tool-result">
     <p class="t-box6">中国から見た場合、指定サイトの表示にかかる時間は</p>
-    <p class="t-box7">{$time}秒</p>
-    {if $time >= 10}
-    <p class="t-box8">
-ご指定のサイトは中国から閲覧することが難しい状況にあります。<br />
-サイトの表示速度に不安がある場合はご相談ください。
-    </p>
+    {if $time == "timeout"}
+        <p class="t-box7-timeout">
+        中国から閲覧することが非常に困難なサイトのため、<br />
+        計測を停止しました。
+        </p>
+    {elseif $time == "error"}
+        <p class="t-box7-timeout">
+        サイトの閲覧に問題が発生したため、<br />
+        計測を停止しました。
+        </p>
     {else}
-    <p class="t-box8">
-中国からのアクセスは時間帯によって速く表示されたり、遅く表示されたりする場合があります。<br />
-サイトの表示速度に不安がある場合はご相談ください。
-    </p>
+        <p class="t-box7">{$time}秒</p>
     {/if}
+    
+    
+    {if $time >= 10 || $time == "timeout"}
+        <p class="t-box8">
+        ご指定のサイトは中国から閲覧することが難しい状況にあります。<br />
+        サイトの表示速度に不安がある場合はご相談ください。
+        </p>
+    {elseif $time == "error"}
+        <p class="t-box8">
+        URLが正しいか再度ご確認ください。<br />
+        正常なURLにも関わらず計測ができない場合、<br /><span class="alert">中国からの閲覧が禁止</span>されているサイトの可能性があります。<br />
+        サイトの表示に不安がある場合はご相談ください。
+        </p>
+    {else}
+        <p class="t-box8">
+        中国からのアクセスは時間帯によって速く表示されたり、遅く表示されたりする場合があります。<br />
+        サイトの表示速度に不安がある場合はご相談ください。
+        </p>
+    {/if}
+    
     <div class="t-box9">
-    <a href="/rapid"><img src="/img/tool/banner_express_off.jpg" alt="" /></a>
+    <a href="/rapid"><img src="/img/tool/banner_rapid_off.jpg" alt="" /></a>
     </div>
     <p class="t-box8">
-■参考測定数値<br />
-1秒以下：大変快速です<br />
-1 - 3秒以内：快速です<br />
-3 - 5秒以内：少々遅く感じます<br />
-5 - 10秒以内：かなり遅く感じます<br />
-10秒以上:閲覧することが困難です<br />
+    ■参考測定数値<br />
+    1秒以下：大変快速です<br />
+    1 - 3秒以内：快速です<br />
+    3 - 5秒以内：少々遅く感じます<br />
+    5 - 10秒以内：かなり遅く感じます<br />
+    10秒以上:閲覧することが困難です<br />
     </p>
 
     <div class="t-box10">

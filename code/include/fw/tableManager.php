@@ -9,6 +9,9 @@ define('A_USER',                  'u');
 //user_seo
 define('T_SEO',                   'adviser.tab_adviser_seo');
 define('A_SEO',                   's');
+//performance
+define('T_PERFORMANCE',               'adviser.tab_adviser_performance');
+define('A_PERFORMANCE',               'p');
 //inquiry
 define('T_INQUIRY',               'adviser.tab_adviser_inquiry');
 define('A_INQUIRY',               'i');

@@ -462,7 +462,7 @@ margin-top:15px;
 .tool-result {
 background:url(/img/tool/tool_result.jpg) 0 0 no-repeat;
 width:585px;
-height:600px;
+height:650px;
 margin:2px auto 60px auto;
 }
 .t-box6 {
@@ -483,11 +483,28 @@ font-weight:bold;
 color:#FF3300;
 padding:5px;
 }
+
+.t-box7-timeout {
+    text-align:center;
+    width:360px;
+    margin:4px auto 10px auto;
+    border:1px solid #E4E4E4;
+    font-size:110%;
+    font-weight:bold;
+    color:#FF3300;
+    padding:5px;
+}
+
 .t-box8 {
 text-align:left;
 width:330px;
 margin:4px auto 20px auto;
 }
+
+.t-box8 .alert{
+    color:#FF3300;
+}
+
 .t-box9 {
 text-align:center;
 width:360px;
