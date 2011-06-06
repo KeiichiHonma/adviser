@@ -10,8 +10,8 @@
 <script type="text/javascript" src="/js/common.js"></script>
 <script src="/js/alphafilter.js" type="text/javascript"></script>
 <script type="text/javascript" src="/js/form.js"></script>
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
  
 <title>お問い合わせ | チャイナアドバイザー</title>
 </head>

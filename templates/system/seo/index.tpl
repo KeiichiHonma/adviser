@@ -6,6 +6,8 @@
 <link type="text/css" rel="stylesheet" href="/css/system/contents.css" />
 <link type="text/css" rel="stylesheet" href="/css/system/support.css" />
 {include file="include/system/js.inc"}
+<link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <div id="wrapper">

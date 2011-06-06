@@ -9,8 +9,8 @@
 <link rel="stylesheet" type="text/css" href="/css/corp.css" />
 <script type="text/javascript" src="/js/common.js"></script>
 
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
  
 <title>運営 | チャイナアドバイザー</title>
 </head>

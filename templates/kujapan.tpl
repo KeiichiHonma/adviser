@@ -8,8 +8,8 @@
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <script type="text/javascript" src="/js/common.js"></script>
 
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
  
 <title>中国人観光客を集客するためのお買い物クーポンサイト | チャイナアドバイザー</title>
 </head>

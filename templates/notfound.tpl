@@ -17,8 +17,8 @@
     });
 </script>
 {/literal}
-<link rel="shortcut icon" href="common/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="common/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
  
 <title>中国へインターネットで進出支援 | チャイナアドバイザー</title>
 </head>

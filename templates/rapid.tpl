@@ -8,8 +8,8 @@
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <script type="text/javascript" src="/js/common.js"></script>
 
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
  
 <title>サーバー、ICP不要で中国語サイトをアクセス改善 | チャイナアドバイザー</title>
 </head>
