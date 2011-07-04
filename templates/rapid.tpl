@@ -20,8 +20,41 @@
 {include file="include/common/header.inc"}
 
 <div id="contents" class="clearfix">
-{*left navi*}
-{include file="include/common/l_navi.inc"}
+
+<div id="g-navi">
+    <div id="g-navi02">
+    <h3><img src="/img/common/gnavi02_off.jpg" alt="中国語サイト快速サービス" /></h3>
+    <ul>
+    <li><a href="/rapid#ex01">中国語サイト快速サービスとは？</a></li>
+    <li><a href="/rapid#ex02">中国向けWEBサイトの課題</a></li>
+    <li><a href="/rapid#ex03">サービス概要</a></li>
+    <li><a href="/rapid#ex04">中国から日本のWEBサイトを見た時の表示速度例</a></li>
+    <li><a href="/rapid#ex05">中国語サイト快速サービスを使用して問題解決</a></li>
+    <li><a href="/rapid#ex06">下記に該当のお客様はぜひご検討ください</a></li>
+    <li><a href="/rapid#ex07">料金</a></li>
+    <li><a href="/rapid#ex08">スタートまでの流れ</a></li>
+
+    </ul>
+    </div>
+
+    <div id="g-navi-new">
+    <h3><img src="/img/common/gnavi_top.jpg" alt="サービス一覧" /></h3>
+    <ul>
+    <li class="navy"><a href="/pr">中国4大ポータル記事掲載保証PR</a></li>
+    <li class="navy"><a href="/kujapan">日遊酷棒（リーヨウクーバン）</a></li>
+    <li class="navy"><a href="/bbs">中国BBS口コミPR</a></li>
+    <li class="navy"><a href="/microblog">中国マイクロブログ（微博）PR</a></li>
+    <li class="navy"><a href="/blogger">中国人気ブロガーPR</a></li>
+    <li class="navy"><a href="/baike">百度百科登録</a></li>
+    <li class="navy"><a href="/zhidao">百度知道登録</a></li>
+    </ul>
+    </div>
+
+    <div class="banner">
+    <a href="/tool/input"><img src="/img/common/banner_tool_off.jpg" alt="中国向けWEBサイトパフォーマンスツール" /></a>
+    </div>
+</div><!--#g-navi-->
+
 <div id="m-contents">
 <h2><img src="/img/rapid/ptt_ex.jpg" alt="中国語サイト快速サービス" /></h2>
 
@@ -84,7 +117,7 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 </div>
 
-<div class="section sec02" name="ex06" id="ex06">
+<div class="section sec02" name="ex04" id="ex04">
 <h3><img src="/img/rapid/tt_ex06.jpg" alt="中国から日本のWEBサイトを見た時の表示速度例" /></h3>
 <div class="doc">
 <div class="doc-title">
@@ -100,7 +133,7 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 
 
 
-<div class="section sec02" name="ex04" id="ex04">
+<div class="section sec02" name="ex05" id="ex05">
 <h3><img src="/img/rapid/tt_ex04.jpg" alt="中国語サイト快速サービスを使用して問題解決" /></h3>
 <div class="doc">
 <ul id="light">
@@ -112,7 +145,7 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 </div>
 </div>
 
-<div class="section sec02" name="ex05" id="ex05">
+<div class="section sec02" name="ex06" id="ex06">
 <h3><img src="/img/rapid/tt_ex05.jpg" alt="下記に該当のお客様はぜひご検討ください" /></h3>
 <div class="doc">
 <ul id="check">
@@ -131,7 +164,7 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <h3><img src="/img/rapid/tt_ex07.jpg" alt="料金" /></h3>
 <div class="doc">
 <div class="doc-indent">
-<table>
+<table class="fee">
 <tr>
 <th>月額</th>
 <td>52,500円/月<span>（年間契約となります。）</span></td>

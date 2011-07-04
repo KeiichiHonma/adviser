@@ -20,8 +20,42 @@
 {include file="include/common/header.inc"}
 
 <div id="contents" class="clearfix">
-{*left navi*}
-{include file="include/common/l_navi.inc"}
+
+<div id="g-navi">
+    <div id="g-navi03">
+    <h3><img src="/img/common/gnavi03_off.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" /></h3>
+    <ul>
+    <li><a href="/kujapan#kj01">日遊酷棒（リーヨウクーバン）とは？</a></li>
+    <li><a href="/kujapan#kj02">仕組み</a></li>
+    <li><a href="/kujapan#kj03">中国人観光客増加の背景</a></li>
+    <li><a href="/kujapan#kj04">大手が続々参加</a></li>
+    <li><a href="/kujapan#kj05">掲載料金は一切無料</a></li>
+    <li><a href="/kujapan#kj06">充実のカスタマーサポート</a></li>
+    <li><a href="/kujapan#kj07">サーバーは中国なので快速アクセス</a></li>
+    <li><a href="/kujapan#kj08">決済は中国ネット決済最大手の支付宝（アリペイ）</a></li>
+    <li><a href="/kujapan#kj09">香港、台湾サイトもご用意</a></li>
+
+    </ul>
+    </div>
+
+    <div id="g-navi-new">
+    <h3><img src="/img/common/gnavi_top.jpg" alt="サービス一覧" /></h3>
+    <ul>
+    <li class="navy"><a href="/pr">中国4大ポータル記事掲載保証PR</a></li>
+    <li class="navy"><a href="/rapid">中国サイト快速サービス</a></li>
+    <li class="navy"><a href="/bbs">中国BBS口コミPR</a></li>
+    <li class="navy"><a href="/microblog">中国マイクロブログ（微博）PR</a></li>
+    <li class="navy"><a href="/blogger">中国人気ブロガーPR</a></li>
+    <li class="navy"><a href="/baike">百度百科登録</a></li>
+    <li class="navy"><a href="/zhidao">百度知道登録</a></li>
+    </ul>
+    </div>
+
+    <div class="banner">
+    <a href="/tool/input"><img src="/img/common/banner_tool_off.jpg" alt="中国向けWEBサイトパフォーマンスツール" /></a>
+    </div>
+</div><!--#g-navi-->
+
 <div id="m-contents">
 <h2><img src="/img/kujapan/ptt_kj.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" /></h2>
 

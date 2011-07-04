@@ -20,6 +20,26 @@ class commonPosition extends positionManager
     (
         'name'=>'日遊酷棒（リーヨウクーバン）','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
     ),
+    'bbs'=>array
+    (
+        'name'=>'中国BBS口コミPR','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+    ),
+    'microblog'=>array
+    (
+        'name'=>'中国マイクロブログ（微博）PR','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+    ),
+    'blogger'=>array
+    (
+        'name'=>'中国人気ブロガーPR','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+    ),
+    'baike'=>array
+    (
+        'name'=>'百度百科登録','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+    ),
+    'zhidao'=>array
+    (
+        'name'=>'百度知道登録','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+    ),
     'tool'=>array
     (
         'input'=>array

@@ -3,9 +3,14 @@
 <div id="f-navi" class="clearfix">
 <ul>
 <li><a href="/">ホーム</a></li>
-<li><a href="/pr">中国4大ポータル記事掲載保証 PR</a></li>
-<li><a href="/rapid">中国語サイト快速サービス</a></li>
-<li><a href="/kujapan">訪日中国人観光客集客サイト「日遊酷棒」</a></li>
+<li class="pr"><a href="/pr">中国4大ポータル記事掲載保証PR</a></li>
+<li class="rapid"><a href="/rapid">中国サイト快速サービス</a></li>
+<li class="kujapan"><a href="/kujapan">日遊酷棒（リーヨウクーバン）</a></li>
+<li class="bbs"><a href="/bbs">中国BBS口コミPR</a></li>
+<li class="microblog"><a href="/microblog">中国マイクロブログ（微博）PR</a></li>
+<li class="blogger"><a href="/blogger">中国人気ブロガーPR</a></li>
+<li class="baike"><a href="/baike">百度百科登録</a></li>
+<li class="zhidao"><a href="/zhidao">百度知道登録</a></li>
 <li><a href="/tool/input">中国向けWEBサイトパフォーマンスツール</a></li>
 <li><a href="/inquiry/input">お問い合わせ</a></li>
 <li><a href="/corp">運営</a></li>

@@ -20,8 +20,43 @@
 {include file="include/common/header.inc"}
 
 <div id="contents" class="clearfix">
-{*left navi*}
-{include file="include/common/l_navi.inc"}
+
+<div id="g-navi">
+    <div id="g-navi01">
+    <h3><img src="/img/common/gnavi01_off.jpg" alt="中国4大ポータル記事掲載保証 PR" /></h3>
+    <ul>
+    <li><a href="/pr#pr01">中国4大ポータル記事掲載保証PRとは？</a></li>
+    <li><a href="/pr#pr02">4つの保証</a></li>
+    <li><a href="/pr#pr03">中国でプロモーションをする際の6つの課題</a></li>
+    <li><a href="/pr#pr04">サービス概要</a></li>
+    <li><a href="/pr#pr05">掲載保証先の中国4大ポータルとは？</a></li>
+    <li><a href="/pr#pr06">4大ポータル以外にも掲載保証可能なカテゴリ</a></li>
+    <li><a href="/pr#pr07">ブログやその他大手サイトにも拡散</a></li>
+    <li><a href="/pr#pr08">掲載表示例</a></li>
+    <li><a href="/pr#pr09">料金</a></li>
+    <li><a href="/pr#pr10">掲載の流れ</a></li>
+
+    </ul>
+    </div>
+
+    <div id="g-navi-new">
+    <h3><img src="/img/common/gnavi_top.jpg" alt="サービス一覧" /></h3>
+    <ul>
+    <li class="navy"><a href="/rapid">中国サイト快速サービス</a></li>
+    <li class="navy"><a href="/kujapan">日遊酷棒（リーヨウクーバン）</a></li>
+    <li class="navy"><a href="/bbs">中国BBS口コミPR</a></li>
+    <li class="navy"><a href="/microblog">中国マイクロブログ（微博）PR</a></li>
+    <li class="navy"><a href="/blogger">中国人気ブロガーPR</a></li>
+    <li class="navy"><a href="/baike">百度百科登録</a></li>
+    <li class="navy"><a href="/zhidao">百度知道登録</a></li>
+    </ul>
+    </div>
+
+    <div class="banner">
+    <a href="/tool/input"><img src="/img/common/banner_tool_off.jpg" alt="中国向けWEBサイトパフォーマンスツール" /></a>
+    </div>
+</div><!--#g-navi-->
+
 <div id="m-contents">
 <h2><img src="/img/pr/ptt_pr.jpg" alt="中国4大ポータル記事掲載保証 PR" /></h2>
 
@@ -69,7 +104,7 @@
 </div>
 
 <div class="section sec02" name="pr05" id="pr05">
-<h3><img src="/img/pr/tt_pr05.jpg" alt="掲載保証先の中国4大ポータルとは？ " /></h3>
+<h3><img src="/img/pr/tt_pr05.jpg" alt="掲載保証先の中国4大ポータルとは？" /></h3>
 <div class="doc">
 <div class="doc-title">
 <h4 class="red">中国での露出最大化の最短の近道はこれらの4大ポータルへ露出することです。</h4>
@@ -150,7 +185,7 @@
 </div>
 </div>
 
-<div class="section sec02" name="pr10" id="pr09">
+<div class="section sec02" name="pr10" id="pr10">
 <h3><img src="/img/pr/tt_pr10.jpg" alt="掲載の流れ" /></h3>
 <div class="doc">
 <img src="/img/pr/pr10_img01.jpg" alt="掲載の流れ" />
