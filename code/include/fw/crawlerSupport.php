@@ -32,7 +32,7 @@ class crawlerSupport
     //private $rollover_string = array('_on','on');
     private $rollover_string = null;
     private $replace_html = array();//htmlファイルの中で置換が必要なソースリスト. key => value keyをvalueで変換
-    private $icp_html = "\n北京九五太维资讯有限公司\n京ICP证040867号-3\n";
+    private $icp_html = "\n北京九五太维资讯有限公司\n京ICP证040867号-3\n京公网安备110105008661号\n";
     
     private $reserve = array();
     
