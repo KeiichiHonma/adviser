@@ -203,6 +203,74 @@ class mailManager
         $this->append();
     }
 
+    public function sendPartnerInquiry($isHachione = FALSE){
+        if($isHachione){
+            $this->setHachioneTo();
+        }else{
+            $this->setInquiryTo($_POST['mail']);
+        }
+        
+        $subject = $isHachione ? '[China Adviser]セールスパートナーお問い合わせがありました' : '[China Adviser]セールスパートナーお問い合わせありがとうございます';
+        $this->mail->subject($subject);
+        
+        $message = '';
+        $message .= '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'."\n";
+        $message .= 'このメールは、登録メールアドレス宛に自動的にお送りしています。'."\n";
+        $message .= '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'."\n";
+
+
+        $message .= $_POST['name']." 様\n\n";
+        $message .= 'この度は[China Adviser]へのセールスパートナーお問い合わせ誠にありがとうございます'."\n\n";
+
+        $message .= "お問い合わせ内容----------------------------------------------------\n";
+        $message .= '●会社名'."\n";
+        $message .= $_POST['company']."\n\n";
+
+        $message .= '●部署'."\n";
+        $message .= $_POST['division']."\n\n";
+
+        $message .= '●担当者'."\n";
+        $message .= $_POST['name']."\n\n";
+                
+        $message .= '●メールアドレス'."\n";
+        $message .= $_POST['mail']."\n\n";
+
+        $message .= '●電話番号'."\n";
+        $message .= $_POST['telephone1'].'－'.$_POST['telephone2'].'－'.$_POST['telephone3']."\n\n";
+        
+        $message .= '●郵便番号'."\n";
+        $message .= $_POST['postcode1'].'－'.$_POST['postcode2']."\n\n";
+        
+        $message .= '●住所'."\n";
+        $message .= $_POST['address']."\n\n";
+
+
+        $message .= '●お問い合わせ内容'."\n";
+        $message .= $_POST['detail']."\n";
+        if(!$isHachione){
+            $message .= "\n".'後日、担当者よりご連絡させていただきます。'."\n";
+            $message .= '今後とも「China Adviser」を宜しくお願いいたします。 '."\n";
+
+            $message .= "\n".'━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'."\n";
+            $message .= '┏┏┏ 株式会社81(ハチワン)'."\n";
+            $message .= '┏┏┏ +世界をつなぎ、世界を身近に+'."\n";
+            $message .= '┏┏┏ URL : http://www.813.co.jp/'."\n";
+            $message .= '┏┏┏ Mail: info@813.co.jp'."\n";
+            $message .= '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━';
+
+        }
+
+        $this->mail->text($message);
+        
+        $from = array
+        (
+            array( 'info@813.co.jp' , '株式会社ハチワン' )
+        );
+        $this->mail->from( $from );
+        $this->mail->send();
+        $this->append();
+    }
+
     //デバッグ
     public function sendDebug($string){
         global $con;

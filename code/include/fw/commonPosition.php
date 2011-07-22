@@ -62,6 +62,24 @@ class commonPosition extends positionManager
             'name'=>'お問い合わせ完了','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
         ),
     ),
+    'partner'=>array
+    (
+        'index'=>array
+        (
+            'name'=>'セールスパートナー募集','func'=>null,'ssl'=>FALSE,'gnavi'=>'index','snavi'=>null
+        ),
+        'inquiry'=>array
+        (
+            'input'=>array
+            (
+                'name'=>'セールスパートナーのお問い合わせ','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+            ),
+            'finish'=>array
+            (
+                'name'=>'セールスパートナーのお問い合わせ完了','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+            ),
+        ),
+    ),
     'corp'=>array
     (
         'name'=>'運営','func'=>null,'ssl'=>FALSE,'gnavi'=>'index','snavi'=>null

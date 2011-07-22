@@ -13,6 +13,7 @@
 <li class="zhidao"><a href="/zhidao">百度知道登録</a></li>
 <li><a href="/tool/input">中国向けWEBサイトパフォーマンスツール</a></li>
 <li><a href="/inquiry/input">お問い合わせ</a></li>
+<li><a href="/partner/inquiry/input">セールスパートナーお問い合わせ</a></li>
 <li><a href="/corp">運営</a></li>
 </ul>
 </div><!--#f-navi-->

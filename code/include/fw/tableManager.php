@@ -15,6 +15,9 @@ define('A_PERFORMANCE',               'p');
 //inquiry
 define('T_INQUIRY',               'adviser.tab_adviser_inquiry');
 define('A_INQUIRY',               'i');
+//partner inquiry
+define('T_PARTNER_INQUIRY',               'adviser.tab_adviser_partner_inquiry');
+define('A_PARTNER_INQUIRY',               'pi');
 
 define('MINIMUM',        0);//最小カラム
 define('COMMON',         1);//通常含めるカラム
