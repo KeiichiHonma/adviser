@@ -4,9 +4,16 @@ class inquiryForm extends formManager
 {
     public $trigger = array
     (
+        'all_check'=>'中国向けプロモーション全般',
+        'inbound_check'=>'インバウンドプロモーション全般',
         'pr_check'=>'中国4大ポータル記事掲載保証 PR',
         'rapid_check'=>'中国語サイト快速サービス',
         'kujapan_check'=>'日遊酷棒（リーヨウクーバン）',
+        'bbs_check'=>'中国BBS口コミPR',
+        'microblog_check'=>'中国マイクロブログ（微博）PR',
+        'blogger_check'=>'中国人気ブロガーPR',
+        'baike_check'=>'百度百科登録',
+        'zhidao_check'=>'百度知道登録',
         'etc_check'=>'その他'
     );
     

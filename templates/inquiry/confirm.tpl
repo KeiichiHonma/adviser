@@ -39,9 +39,16 @@
             <tr>
             <td class="form_ttl"><table cellspacing="0" cellpadding="5"><tr><td lang="ja">お問い合わせ内容</td></tr></table></td>
             <td class="form_data">
+            {if isset($smarty.post.check) && in_array("all_check",$smarty.post.check)}{$trigger.all_check}<input type="hidden" name="check[]" value="all_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("inbound_check",$smarty.post.check)}{$trigger.inbound_check}<input type="hidden" name="check[]" value="inbound_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("pr_check",$smarty.post.check)}{$trigger.pr_check}<input type="hidden" name="check[]" value="pr_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("rapid_check",$smarty.post.check)}{$trigger.rapid_check}<input type="hidden" name="check[]" value="rapid_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("kujapan_check",$smarty.post.check)}{$trigger.kujapan_check}<input type="hidden" name="check[]" value="kujapan_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("bbs_check",$smarty.post.check)}{$trigger.bbs_check}<input type="hidden" name="check[]" value="bbs_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("microblog_check",$smarty.post.check)}{$trigger.microblog_check}<input type="hidden" name="check[]" value="microblog_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("blogger_check",$smarty.post.check)}{$trigger.blogger_check}<input type="hidden" name="check[]" value="blogger_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("baike_check",$smarty.post.check)}{$trigger.baike_check}<input type="hidden" name="check[]" value="baike_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("zhidao_check",$smarty.post.check)}{$trigger.zhidao_check}<input type="hidden" name="check[]" value="zhidao_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("etc_check",$smarty.post.check)}{$trigger.etc_check}&nbsp;{$smarty.post.etc_name}<input type="hidden" name="check[]" value="etc_check" /><input type="hidden" name="etc_name" value="{$smarty.post.etc_name}" />{/if}
             </td>
             </tr>

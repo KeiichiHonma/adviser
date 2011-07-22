@@ -111,7 +111,7 @@ function smarty_modifier_make_form_gray($form_name,$form_setting,$error,$colspan
                 }
                 
             }
-            $html .= $setting[$i]['front'].$data.$setting[$i]['back'];
+            if($data != '') $html .= $setting[$i]['front'].$data.$setting[$i]['back'];
             break;
 
         case 'password':

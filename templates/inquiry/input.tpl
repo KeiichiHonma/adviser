@@ -42,11 +42,26 @@
             <td class="form_ttl"><table cellspacing="0" cellpadding="5"><tr><td lang="ja">{"お問い合わせ内容<span class='attention'>＊</span><br />(複数チェック可)"|error_bold:$error.check}</td></tr></table></td>
             <td lang="ja" class="form_data">
             {$error.check|error_message}
+            
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="all_check" {if isset($smarty.post.check) && in_array("all_check",$smarty.post.check)} checked{/if} /><label for="all_check">&nbsp;<span>{$trigger.all_check}</span></label><br />
+            
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="inbound_check" {if isset($smarty.post.check) && in_array("inbound_check",$smarty.post.check)} checked{/if} /><label for="inbound_check">&nbsp;<span>{$trigger.inbound_check}</span></label><br />
+            
             <input lang="ja" type="checkbox" name="check[]"  class="radio" value="pr_check" {if isset($smarty.post.check) && in_array("pr_check",$smarty.post.check)} checked{/if} /><label for="pr_check">&nbsp;<span>{$trigger.pr_check}</span></label><br />
 
             <input lang="ja" type="checkbox" name="check[]"  class="radio" value="rapid_check" {if isset($smarty.post.check) && in_array("rapid_check",$smarty.post.check)} checked{/if} /><label for="rapid_check">&nbsp;<span>{$trigger.rapid_check}</span></label><br />
 
             <input lang="ja" type="checkbox" name="check[]"  class="radio" value="kujapan_check" {if isset($smarty.post.check) && in_array("kujapan_check",$smarty.post.check)} checked{/if} /><label for="kujapan_check">&nbsp;<span>{$trigger.kujapan_check}</span></label><br />
+            
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="bbs_check" {if isset($smarty.post.check) && in_array("bbs_check",$smarty.post.check)} checked{/if} /><label for="bbs_check">&nbsp;<span>{$trigger.bbs_check}</span></label><br />
+            
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="microblog_check" {if isset($smarty.post.check) && in_array("microblog_check",$smarty.post.check)} checked{/if} /><label for="microblog_check">&nbsp;<span>{$trigger.microblog_check}</span></label><br />
+            
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="blogger_check" {if isset($smarty.post.check) && in_array("blogger_check",$smarty.post.check)} checked{/if} /><label for="blogger_check">&nbsp;<span>{$trigger.blogger_check}</span></label><br />
+            
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="baike_check" {if isset($smarty.post.check) && in_array("baike_check",$smarty.post.check)} checked{/if} /><label for="baike_check">&nbsp;<span>{$trigger.baike_check}</span></label><br />
+            
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="zhidao_check" {if isset($smarty.post.check) && in_array("zhidao_check",$smarty.post.check)} checked{/if} /><label for="zhidao_check">&nbsp;<span>{$trigger.zhidao_check}</span></label><br />
 
             <input lang="ja" type="checkbox" name="check[]"  class="radio" value="etc_check" onClick="checkEtc(this)"{if isset($smarty.post.check) && in_array("etc_check",$smarty.post.check)} checked{/if} /><label for="etc_check">&nbsp;<span>{$trigger.etc_check}</span></label><br />
             <p class="m_b10"><input lang="ja" type="text" name="etc_name" value="{if isset($smarty.post.etc_name)}{$smarty.post.etc_name}{/if}" class="form_text_common" /></p>
