@@ -15,7 +15,6 @@
 <title>お問い合わせ | チャイナアドバイザー</title>
 </head>
 <body>
-
 <div id="container">
 {*header*}
 {include file="include/common/header_not_contact.inc"}
@@ -35,6 +34,30 @@
     また、ご登録いただいたメールアドレス宛てに確認のメールを送信しております。<br />
     併せてご確認くださいませ。<br />
     今後ともChina Adviserを宜しくお願いいたします。 <br /></p>
+{if $debug == FALSE}
+<!-- Google Code for &#12362;&#21839;&#12356;&#21512;&#12431;&#12379; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1037574978;
+var google_conversion_language = "ja";
+var google_conversion_format = "2";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "Mr2OCMzInQIQwsbg7gM";
+var google_conversion_value = 0;
+if (1) {ldelim}
+  google_conversion_value = 1;
+{rdelim}
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1037574978/?value=1&amp;label=Mr2OCMzInQIQwsbg7gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+{/if}
+
     </div>
 </div>
 </div><!--#m-contents-->
@@ -50,7 +73,5 @@
 
 {*footer*}
 {include file="include/common/footer.inc"}
-
-
 </body>
 </html>
