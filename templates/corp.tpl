@@ -54,7 +54,7 @@
     <p>URL:&nbsp;<a href="http://www.813.co.jp/">http://www.813.co.jp/</a><br />Mail:&nbsp;{mailto address="info@813.co.jp" encode="hex" text="info@813.co.jp"}</p>
     
     <h3 class="subttl">○北京オフィス</h3>
-    <p>中国 北京市海淀区中関村大街45号興発プラザ614室</p>
+    <p>中国 北京市海淀区上地十街1号院輝煌国際センター4号ビル1204室</p>
     
     </td>
     </tr>
