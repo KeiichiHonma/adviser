@@ -11,14 +11,14 @@ if($con->isPost){
     
 
     if($result && is_numeric($result)){
-        $performance_handle->addRow($url,$result,0);
+        //$performance_handle->addRow($url,$result,0);
         $con->safeExitRedirect('/tool/result?time='.$result);
         
     }elseif(strcasecmp($result,'timeout') == 0){
-        $performance_handle->addRow($url,0,1);
+        //$performance_handle->addRow($url,0,1);
         $con->safeExitRedirect('/tool/result?time=timeout');
     }else{
-        $performance_handle->addRow($url,0,3);
+        //$performance_handle->addRow($url,0,3);
         $con->safeExitRedirect('/tool/result?time=error');
     }
 }
