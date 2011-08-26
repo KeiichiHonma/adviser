@@ -14,8 +14,9 @@ class userForm extends formManager
             'URL'=>array(             'name'=>'url',       'type'=>'text',  'func'=>null,               'class'=>'form_text_large',    'maxlength'=>null,'must'=>TRUE, 'front'=>'','back'=>'', 'remarks'=>''),
             '深さ'=>array(            'name'=>'depth',      'type'=>'text',  'func'=>null,               'class'=>'form_text_common',   'maxlength'=>null,'must'=>FALSE, 'front'=>'','back'=>'', 'remarks'=>''),
             '許可ドメイン'=>array(  'name'=>'domain', 'type'=>'textarea',  'func'=>null,               'class'=>'form_textarea_little',   'maxlength'=>null,'must'=>TRUE, 'front'=>'','back'=>'', 'remarks'=>'カンマ区切り'),
-            'ロールオーバー'=>array(  'name'=>'rollover', 'type'=>'textarea',  'func'=>null,               'class'=>'form_textarea_little',   'maxlength'=>null,'must'=>FALSE, 'front'=>'','back'=>'', 'remarks'=>'カンマ区切り'),
-            '直接指定'=>array(  'name'=>'direct', 'type'=>'textarea',  'func'=>null,               'class'=>'form_textarea_little',   'maxlength'=>null,'must'=>FALSE, 'front'=>'','back'=>'', 'remarks'=>'カンマ区切り'),
+            'ロールオーバー'=>array(  'name'=>'rollover', 'type'=>'textarea',  'func'=>null,               'class'=>'form_textarea_little',   'maxlength'=>null,'must'=>FALSE, 'front'=>'','back'=>'', 'remarks'=>'カンマ,改行区切り'),
+            'ファイル直接指定'=>array(  'name'=>'direct', 'type'=>'textarea',  'func'=>null,               'class'=>'form_textarea_little',   'maxlength'=>null,'must'=>FALSE, 'front'=>'','back'=>'', 'remarks'=>'改行区切り'),
+            '置換文字列指定'=>array(  'name'=>'replace', 'type'=>'textarea',  'func'=>null,               'class'=>'form_textarea_little',   'maxlength'=>null,'must'=>FALSE, 'front'=>'','back'=>'', 'remarks'=>'カンマ,改行区切り'),
             '有効/無効'=>array(       'name'=>'validate',  'type'=>'radio', 'func'=>'getValidateRadio', 'class'=>'',                   'maxlength'=>null,'must'=>TRUE, 'front'=>'','back'=>'','m_text_style'=>null, 'remarks'=>''),
         )
     );

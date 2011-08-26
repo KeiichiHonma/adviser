@@ -14,6 +14,7 @@ class userTable extends tableManager
             array('column'=>'depth',             'as'=>null,        'type'=>COMMON,    'input'=>TRUE,  'group'=>null),
             array('column'=>'rollover',          'as'=>null,        'type'=>COMMON,    'input'=>TRUE,  'group'=>null),
             array('column'=>'direct',            'as'=>null,        'type'=>COMMON,    'input'=>TRUE,  'group'=>null),
+            array('column'=>'replace',           'as'=>null,        'type'=>COMMON,    'input'=>TRUE,  'group'=>null),
             array('column'=>'validate',          'as'=>null,        'type'=>COMMON,    'input'=>TRUE,  'group'=>null)
         );
     

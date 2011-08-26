@@ -34,14 +34,14 @@ class crawlerSupport
     private $replace_html = array();//htmlファイルの中で置換が必要なソースリスト. key => value keyをvalueで変換
     private $icp_html = "\n北京九五太维资讯有限公司\n京ICP证040867号-3\n京公网安备110105008661号\n";
     
-    private $reserve = array();
+    private $replace_array = null;
     
     private $seo = array();
     
     //test
     private $wget_list = array();
     
-    function __construct($user_dir,$user_domain = null,$seo = FALSE,$rollover = null){
+    function __construct($user_dir,$user_domain = null,$seo = FALSE,$rollover = null,$replace = null){
         $this->setUserDir($user_dir);
         $this->absolute_user_dir = WGET_DIR.'/'.$this->user_dir;
         $this->finish_image_log = SHELL_DIR.'/'.$this->user_dir.'/'.FINISH_IMAGE_LOG;
@@ -57,14 +57,12 @@ class crawlerSupport
         //チェックは個別のココマンドで実施
         if(!is_null($rollover)){
             $this->rollover_string = $rollover;
-/*            $split = split("\n", $rollover_string);
-            foreach ($split as $value){
-                $split2 = split(',',trim($value));
-                if(count($split2) == 2) $this->rollover_string[$split2[0]] = $split2[1];
-            }*/
         }
-        //$this->setUserHtmlFiles();//htmlリスト化
-        
+
+        if(!is_null($replace)){
+            $this->replace_array = $replace;
+        }
+
         //seo情報
         if($seo){
             $this->seo = array
@@ -295,7 +293,7 @@ class crawlerSupport
 /*var_dump($this->wget_list);
 die();*/
         //上書き保存
-        $this->html->save($this->absolute_under_user_dir.'/'.$html_file,$this->icp_html);
+        $this->html->save($this->absolute_under_user_dir.'/'.$html_file,$this->icp_html,$this->replace_array);
         //echo $this->html; die();
     }
 
@@ -309,10 +307,6 @@ die();*/
                 $ret[] = $this->pavukCss($import_path_file,$this->absolute_under_user_dir);
             }
         }
-
-        //上書き保存
-        //$this->html->save($this->absolute_under_user_dir.'/'.$html_file,$this->icp_html);
-        //echo $this->html; die();
     }
 
     private function getCssImport($css_file)
@@ -556,6 +550,7 @@ die();*/
         $arg .= ' -nd';//ディレクトリを作成しない
         $arg .= ' -nH';//トップディレクトリを作成しない
         $arg .= ' -N';//タイムスタンプが新しいファイルだけ（更新されたファイルだけ）ダウンロードします。
+        $arg .= ' --restrict-file-names=nocontrol';//URLエンコードされた文字列をエスケープせずに取得
         $arg .= ' --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"';
         //exec('/usr/local/bin/wget '.$arg,$out,$ret);
         system('/usr/local/bin/wget '.$arg);

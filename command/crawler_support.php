@@ -61,8 +61,26 @@ if(strlen($user[0]['col_rollover']) > 0){
     //$rollover = $user[0]['col_rollover'];
 }
 
+//予約文字列、予約ファイルチェック
+$replace = null;
+
+if(strlen($user[0]['col_replace']) > 0){
+    $split = split("\n", $user[0]['col_replace']);
+    foreach ($split as $value){
+        $split2 = split(',',trim($value));
+        if(count($split2) == 2) $tmp_replace[$split2[0]] = $split2[1];
+    }
+    if(is_array($tmp_replace) && count($tmp_replace) > 0) $replace = $tmp_replace;
+
+/*var_dump(array_keys($replace));
+
+var_dump(array_values($replace));
+
+die();*/
+}
+
 require_once('fw/crawlerSupport.php');
-$crawler_support = new crawlerSupport($user_dir,$user_domain,$seo,$rollover);
+$crawler_support = new crawlerSupport($user_dir,$user_domain,$seo,$rollover,$replace);
 $crawler_support->doCrawlerSupport($absolute_path,$html_file);
 
 ?>

@@ -573,10 +573,17 @@ class simple_html_dom {
     }
 
     // save dom as string
-    function save($filepath='',$isICP = '') {
+    function save($filepath='',$isICP,$replace = null) {
         $ret = $this->root->innertext();
+        
+        //保存直前にICP追記
         if($isICP != ''){
            $ret = str_replace(array('</body>','</BODY>'),array($isICP.'</body>',$isICP.'</BODY>'),$ret);
+        }
+        //保存直前に予約文字列置換
+        
+        if(!is_null($replace)){
+           $ret = str_replace(array_keys($replace),array_values($replace),$ret);
         }
         if ($filepath!=='') file_put_contents($filepath, $ret);
         return $ret;
