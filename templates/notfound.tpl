@@ -42,8 +42,7 @@
 <div id="contents" class="clearfix">
 <div id="m-image"></div>
 <h2 class="notfound"><img src="/img/common/tt_notfound.jpg" alt="あなたのアクセスしようとしたページは見つかりませんでした。" /></h2>
-{*left navi*}
-{include file="include/common/l_navi.inc"}
+
 
 <div id="tm-contents">
 
@@ -89,80 +88,67 @@
 </div>
 
 <div class="top-box">
-<h2><img src="/img/index/top_tt04.jpg" alt="中国BBS口コミPR" /></h2>
+<h2><a href="/bbs"><img src="/img/index/top_tt04.jpg" alt="中国BBS口コミPR" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<img src="/img/index/top_blank_img.jpg" alt="中国BBS口コミPR" width="116" height="82" />
+<a href="/bbs"><img src="/img/index/top_box_img04.jpg" alt="中国BBS口コミPR" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
 <p>中国で人気の大手BBS掲示板で企業の商品やサービスを紹介したスレッドを立て、スレッド内の口コミを活性化させるサービスです。</p>
 </div>
-<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+<div><a href="/bbs"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
 </div>
 
 <div class="top-box">
-<h2><img src="/img/index/top_tt05.jpg" alt="中国マイクロブログ（微博）PR" /></h2>
+<h2><a href="/microblog"><img src="/img/index/top_tt05.jpg" alt="中国マイクロブログ（微博）PR" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<img src="/img/index/top_blank_img.jpg" alt="中国マイクロブログ（微博）PR" width="116" height="82" />
+<a href="/microblog"><img src="/img/index/top_box_img05.jpg" alt="中国マイクロブログ（微博）PR" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
 <p>中国でフォロワー10,000人以上をもつ人気マイクロブログ（中国版Twitter）ユーザに企業の商品やサービスを紹介し、その感想をマイクロブロガー本人に紹介してもらうサービスです。</p>
 </div>
-<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+<div><a href="/microblog"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
 </div>
 
 <div class="top-box">
-<h2><img src="/img/index/top_tt06.jpg" alt="中国人気ブロガーPR" /></h2>
+<h2><a href="/blogger"><img src="/img/index/top_tt06.jpg" alt="中国人気ブロガーPR" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<img src="/img/index/top_blank_img.jpg" alt="中国人気ブロガーPR" width="116" height="82" />
+<a href="/blogger"><img src="/img/index/top_box_img06.jpg" alt="中国人気ブロガーPR" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
-<p>中国で100万PVを超える人気ブロガー達に企業の商品やサービスを紹介し、その感想をブロガー本人の人気ブログを通じて紹介してもらうサービスです。</p>
+<p>中国で100万PVを超える人気ブロガー達に企業の商品やサービスを紹介し、その感想をブロガー本人の人気ブログを通じて紹介してもらうサービスです。</p><br />
 </div>
-<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+<div><a href="/blogger"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
 </div>
 
 <div class="top-box">
-<h2><img src="/img/index/top_tt09.jpg" alt="百度知道登録" /></h2>
+<h2><a href="/baike"><img src="/img/index/top_tt07.jpg" alt="百度百科登録" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<img src="/img/index/top_blank_img.jpg" alt="百度知道登録" width="116" height="82" />
+<a href="/baike"><img src="/img/index/top_box_img07.jpg" alt="百度百科登録" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
-<p>百度百科同様に百度検索結果の上位表示に頻出する中国版「教えてgoo」の百度知道内で、企業の商品やサービスに関するQ&A形式でで紹介するサービスです。</p>
+<p>中国版ウィキペディアである百度百科へ正式登録を行います。百度検索結果の上位表示に頻出するため、中国でのSEO効果と貴社商品の中国での正しい認知が見込めます。</p>
 </div>
-<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+<div><a href="/baike"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
 </div>
 
 <div class="top-box">
-<h2><img src="/img/index/top_tt08.jpg" alt="百度百科登録" /></h2>
+<h2><a href="/zhidao"><img src="/img/index/top_tt08.jpg" alt="百度知道登録" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<img src="/img/index/top_blank_img.jpg" alt="百度百科登録" width="116" height="82" />
+<a href="/zhidao"><img src="/img/index/top_box_img08.jpg" alt="百度知道登録" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
-<p>百度検索結果の上位表示に頻出する中国版ウィキペディアの百度百科へ正式登録を行います。</p>
+<p>中国版「Yahoo!知恵袋」のようなQ&Aサイト百度知道で貴社情報をQ&A形式で紹介するサービスです。百度百科同様にSEO効果と貴社商品の中国での深い理解が見込めます。</p>
 </div>
-<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
-</div>
-</div>
-
-<div class="top-box">
-<h2><img src="/img/index/top_tt07.jpg" alt="中国主要検索エンジンディレクトリ登録" /></h2>
-<div class="box-inner clearfix">
-<div class="box-img">
-<img src="/img/index/top_blank_img.jpg" alt="中国主要検索エンジンディレクトリ登録" width="116" height="82" />
-</div>
-<div class="box-txt">
-<p>中国No.1検索エンジン百度、中国版のYahoo！などSEO効果の高いサイトへディレクトリへの登録申請を行います。</p>
-</div>
-<div><img src="/img/common/bt_top_box_on.jpg" alt="詳細を見る" /></div>
+<div><a href="/zhidao"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
 </div>
 
