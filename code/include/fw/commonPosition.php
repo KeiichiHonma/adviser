@@ -40,6 +40,13 @@ class commonPosition extends positionManager
     (
         'name'=>'百度知道登録','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
     ),
+    'special'=>array
+    (
+        'nikkan'=>array
+        (
+            'name'=>'日刊工業新聞に弊社矢作の記事が掲載されました。','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+        )
+    ),
     'tool'=>array
     (
         'input'=>array

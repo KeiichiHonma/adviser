@@ -44,8 +44,13 @@
 <div id="contents" class="clearfix">
 <div id="m-image"><img src="/img/index/main_img_top.jpg" alt="" /></div>
 
-{*left navi*}
-{include file="include/common/l_navi.inc"}
+<div id="g-navi">
+{*news*}
+{include file="include/common/news.inc"}
+
+{include file="include/common/banner.inc"}
+
+</div><!--#g-navi-->
 
 <div id="tm-contents">
 
