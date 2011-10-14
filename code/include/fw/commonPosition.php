@@ -44,7 +44,7 @@ class commonPosition extends positionManager
     (
         'nikkan'=>array
         (
-            'name'=>'日刊工業新聞に弊社矢作の記事が掲載されました。','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+            'name'=>'日刊工業新聞に弊社が取り上げられました。','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
         )
     ),
     'tool'=>array

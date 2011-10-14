@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
  
-<title>日刊工業新聞に弊社矢作の記事が掲載されました。| チャイナアドバイザー</title>
+<title>日刊工業新聞に弊社が取り上げられました。| チャイナアドバイザー</title>
 </head>
 <body>
 
@@ -42,7 +42,7 @@
     {include file="include/common/banner.inc"}
 </div><!--#g-navi-->
 <div id="m-contents">
-    <h2><img src="/img/special/20111010/ptt_nikkan.jpg" alt="2011年10月10日中国向けやインバウンドプロモーションを行う企業として、弊社が取り上げられました。" /></h2>
+    <h2><img src="/img/special/20111010/ptt_nikkan.jpg" alt="2011年10月10日日刊工業新聞に弊社が取り上げられました。" /></h2>
 
     <div class="section sec01" name="baike01" id="baike01">
         <div class="doc">
