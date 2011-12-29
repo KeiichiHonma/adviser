@@ -56,6 +56,35 @@
 
 <div id="top-inner" class="clearfix">
 
+
+<div class="top-box">
+<h2><a href="/seo"><img src="/img/index/top_tt09.jpg" alt="百度（baidu）SEOサービス" /></a></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/seo"><img src="/img/index/top_box_img09.jpg" alt="百度（baidu）SEOサービス" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>中国最大の検索エンジン百度（baidu）のSEOサービスです。
+百度独自のアルゴリズムを把握し、
+百度の運営するあらゆるサイトから貴社サイト集客をします。</p>
+</div>
+<div><a href="/seo"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><a href="/weibo"><img src="/img/index/top_tt10.jpg" alt="ウェイボー（微博）運用代行サービス" /></a></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/weibo"><img src="/img/index/top_box_img10.jpg" alt="ウェイボー（微博）運用代行サービス" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>貴社のウェイボーを運営代行することにより貴社の中国でのプレゼンスを向上させるサービスです。</p>
+</div>
+<div><a href="/weibo"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
+</div>
+</div>
+
 <div class="top-box">
 <h2><a href="/pr"><img src="/img/index/top_tt01.jpg" alt="中国4大ポータル記事掲載保証 PR" /></a></h2>
 <div class="box-inner clearfix">
@@ -70,15 +99,15 @@
 </div>
 
 <div class="top-box">
-<h2><a href="/rapid"><img src="/img/index/top_tt02.jpg" alt="中国語サイト快速サービス" /></a></h2>
+<h2><a href="/sem"><img src="/img/index/top_tt11.jpg" alt="百度（baidu）SEMサービス" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<a href="/rapid"><img src="/img/index/top_box_img02.jpg" alt="中国語サイト快速サービス" width="116" height="82" /></a>
+<a href="/sem"><img src="/img/index/top_box_img11.jpg" alt="百度（baidu）SEMサービス" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
-<p>貴社の中国向けWEBサイトがICP登録不要で、中国北京にあるサーバーで自動的に表示され、表示速度が格段に速くなるサービスです。</p>
+<p>百度（baidu）の検索連動型広告をはじめ、百度ターゲティング広告など百度に関する様々なプロモーションをご提供。</p>
 </div>
-<div><a href="/rapid"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
+<div><a href="/sem"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
 </div>
 
@@ -96,15 +125,15 @@
 </div>
 
 <div class="top-box">
-<h2><a href="/bbs"><img src="/img/index/top_tt04.jpg" alt="中国BBS口コミPR" /></a></h2>
+<h2><a href="/rapid"><img src="/img/index/top_tt02.jpg" alt="中国語サイト快速サービス" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
-<a href="/bbs"><img src="/img/index/top_box_img04.jpg" alt="中国BBS口コミPR" width="116" height="82" /></a>
+<a href="/rapid"><img src="/img/index/top_box_img02.jpg" alt="中国語サイト快速サービス" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
-<p>中国で人気の大手BBS掲示板で企業の商品やサービスを紹介したスレッドを立て、スレッド内の口コミを活性化させるサービスです。</p>
+<p>貴社の中国向けWEBサイトがICP登録不要で、中国北京にあるサーバーで自動的に表示され、表示速度が格段に速くなるサービスです。</p>
 </div>
-<div><a href="/bbs"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
+<div><a href="/rapid"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
 </div>
 
@@ -135,6 +164,19 @@
 </div>
 
 <div class="top-box">
+<h2><a href="/bbs"><img src="/img/index/top_tt04.jpg" alt="中国BBS口コミPR" /></a></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/bbs"><img src="/img/index/top_box_img04.jpg" alt="中国BBS口コミPR" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>中国で人気の大手BBS掲示板で企業の商品やサービスを紹介したスレッドを立て、スレッド内の口コミを活性化させるサービスです。</p>
+</div>
+<div><a href="/bbs"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
+</div>
+</div>
+
+<div class="top-box">
 <h2><a href="/baike"><img src="/img/index/top_tt07.jpg" alt="百度百科登録" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
@@ -154,13 +196,11 @@
 <a href="/zhidao"><img src="/img/index/top_box_img08.jpg" alt="百度知道登録" width="116" height="82" /></a>
 </div>
 <div class="box-txt">
-<p>中国版「Yahoo!知恵袋」のようなQ&Aサイト百度知道で貴社情報をQ&A形式で紹介するサービスです。百度百科同様にSEO効果と貴社商品の中国での深い理解が見込めます。</p>
+<p>中国版「Yahoo!知恵袋」のようなQ＆Aサイト百度知道で貴社情報をQ＆A形式で紹介するサービスです。百度百科同様にSEO効果と貴社商品の中国での深い理解が見込めます。</p>
 </div>
 <div><a href="/zhidao"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
 </div>
-
-
 
 </div><!--#top-inner-->
 </div><!--#m-contents-->

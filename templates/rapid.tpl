@@ -37,18 +37,7 @@
     </ul>
     </div>
 
-    <div id="g-navi-new">
-    <h3><img src="/img/common/gnavi_top.jpg" alt="サービス一覧" /></h3>
-    <ul>
-    <li class="navy"><a href="/pr">中国4大ポータル記事掲載保証PR</a></li>
-    <li class="navy"><a href="/kujapan">日遊酷棒（リーヨウクーバン）</a></li>
-    <li class="navy"><a href="/bbs">中国BBS口コミPR</a></li>
-    <li class="navy"><a href="/microblog">中国マイクロブログ（微博）PR</a></li>
-    <li class="navy"><a href="/blogger">中国人気ブロガーPR</a></li>
-    <li class="navy"><a href="/baike">百度百科登録</a></li>
-    <li class="navy"><a href="/zhidao">百度知道登録</a></li>
-    </ul>
-    </div>
+    {include file="include/common/l_navi_service.inc"}
 
     {include file="include/common/banner.inc"}
 </div><!--#g-navi-->

@@ -40,6 +40,18 @@ class commonPosition extends positionManager
     (
         'name'=>'百度知道登録','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
     ),
+    'sem'=>array
+    (
+        'name'=>'百度（baidu）SEMサービス','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+    ),
+    'seo'=>array
+    (
+        'name'=>'百度（baidu）SEOサービス','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+    ),
+    'weibo'=>array
+    (
+        'name'=>'ウェイボー（微博）運用代行サービス','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+    ),
     'special'=>array
     (
         'nikkan'=>array
