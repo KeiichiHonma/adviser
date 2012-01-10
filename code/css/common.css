@@ -762,6 +762,11 @@ line-height:1.4;
 margin-bottom:5px !important;
 padding-bottom:0 !important;
 }
+
+.top-wide-box {
+margin:0 0px 10px 0;
+}
+
 /* =====================================================
     フッター
 ===================================================== */

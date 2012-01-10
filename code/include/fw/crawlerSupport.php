@@ -330,10 +330,15 @@ die();*/
     private function handleTag($tag,$attr,$src_or_href){
         //httpから始まる場合DL
         if(ereg("^http://", $src_or_href) !== FALSE){
-            $this->doWgetShell($src_or_href,$this->absolute_under_user_dir);
-            //DLファイルと同じ場所に配置
-            $pathinfo = pathinfo($src_or_href);
-            $this->resetAttrValue($tag,$attr,$pathinfo['filename'].'.'.$pathinfo['extension'],$attr,$src_or_href);
+            
+            if($tag == 'src' && ereg("js$", $src_or_href) === FALSE){
+                //ファイル系のjavascriptじゃない。パラメータ系
+            }else{
+                $this->doWgetShell($src_or_href,$this->absolute_under_user_dir);
+                //DLファイルと同じ場所に配置
+                $pathinfo = pathinfo($src_or_href);
+                $this->resetAttrValue($tag,$attr,$pathinfo['filename'].'.'.$pathinfo['extension'],$attr,$src_or_href);
+            }
         }
         
         //ロールオーバー画像取得

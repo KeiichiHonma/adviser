@@ -57,7 +57,7 @@
 <div id="top-inner" class="clearfix">
 
 
-<div class="top-box">
+{*<div class="top-box">
 <h2><a href="/seo"><img src="/img/index/top_tt09.jpg" alt="百度（baidu）SEOサービス" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
@@ -70,7 +70,7 @@
 </div>
 <div><a href="/seo"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
-</div>
+</div>*}
 
 <div class="top-box">
 <h2><a href="/weibo"><img src="/img/index/top_tt10.jpg" alt="ウェイボー（微博）運用代行サービス" /></a></h2>
@@ -98,7 +98,7 @@
 </div>
 </div>
 
-<div class="top-box">
+{*<div class="top-box">
 <h2><a href="/sem"><img src="/img/index/top_tt11.jpg" alt="百度（baidu）SEMサービス" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
@@ -109,7 +109,7 @@
 </div>
 <div><a href="/sem"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
-</div>
+</div>*}
 
 <div class="top-box">
 <h2><a href="/kujapan"><img src="/img/index/top_tt03.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" /></a></h2>
@@ -200,6 +200,13 @@
 </div>
 <div><a href="/zhidao"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
+</div>
+
+<div class="top-wide-box"><img src="/img/index/record.jpg" alt="" /></div>
+
+<div class="top-wide-box">
+<div style="width:730px;text-align:center;" id="__ss_10928369"><object id="__sse10928369" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=chinaadvisor-120109232852-phpapp01&stripped_title=china-advisor&userName=k-honma" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><param name="wmode" value="transparent"/><embed name="__sse10928369" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=chinaadvisor-120109232852-phpapp01&stripped_title=china-advisor&userName=k-honma" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" width="425" height="355"></embed></object></div>
+
 </div>
 
 </div><!--#top-inner-->
