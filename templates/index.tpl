@@ -205,7 +205,9 @@
 <div class="top-wide-box"><img src="/img/index/record.jpg" alt="" /></div>
 
 <div class="top-wide-box">
-<div style="width:730px;text-align:center;" id="__ss_10928369"><object id="__sse10928369" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=chinaadvisor-120109232852-phpapp01&stripped_title=china-advisor&userName=k-honma" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><param name="wmode" value="transparent"/><embed name="__sse10928369" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=chinaadvisor-120109232852-phpapp01&stripped_title=china-advisor&userName=k-honma" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" width="425" height="355"></embed></object></div>
+
+<div style="width:730px;text-align:center;" id="__ss_10928369"><iframe src="http://www.slideshare.net/slideshow/embed_code/10928369" width="595" height="497" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </div>
+
 
 </div>
 
