@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta name="keywords" content="中国,PR,百度知道,バイドゥ,Baidu,SEO,プロモーション,チャイナアドバイザー,china adviser" />
-<meta name="description" content="中国版「Yahoo!知恵袋」のQ&Aサイト百度知道に登録することで、中国語SEO対策及び貴社商品を正しく中国で理解させるプロモーションです。" />
+<meta name="keywords" content="中国,ウェイボー,運営,運用,代行,Webマーケティング,プロモーション,チャイナアドバイザー,china adviser" />
+<meta name="description" content="Webio（微博）の運用代行でフォロワー獲得10,000人を3ヶ月で目指すサービスです。貴社の中国でのプレゼンスを向上させます。" />
 
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <link rel="stylesheet" type="text/css" href="/css/weibo.css" />
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
  
-<title>（Baidu）百度知道登録で中国SEOと貴社商品の理解促進サービス| チャイナアドバイザー</title>
+<title>ウェイボー運用・運営代行サービスで中国人へアプローチ | チャイナアドバイザー</title>
 </head>
 <body>
 

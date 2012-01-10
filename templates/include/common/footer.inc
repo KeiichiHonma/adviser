@@ -3,7 +3,10 @@
 <div id="f-navi" class="clearfix">
 <ul>
 <li><a href="/">ホーム</a></li>
+{*<li class="seo"><a href="/seo">百度（baidu）SEOサービス</a></li>*}
+<li class="weibo"><a href="/weibo">ウェイボー（微博）運用代行サービス</a></li>
 <li class="pr"><a href="/pr">中国4大ポータル記事掲載保証PR</a></li>
+{*<li class="sem"><a href="/sem">百度（baidu）SEMサービス</a></li>*}
 <li class="rapid"><a href="/rapid">中国サイト快速サービス</a></li>
 <li class="kujapan"><a href="/kujapan">日遊酷棒（リーヨウクーバン）</a></li>
 <li class="bbs"><a href="/bbs">中国BBS口コミPR</a></li>
