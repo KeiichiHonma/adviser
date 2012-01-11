@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-<meta name="keywords" content="中国,PR,百度知道,バイドゥ,Baidu,SEO,プロモーション,チャイナアドバイザー,china adviser" />
-<meta name="description" content="中国版「Yahoo!知恵袋」のQ&Aサイト百度知道に登録することで、中国語SEO対策及び貴社商品を正しく中国で理解させるプロモーションです。" />
+<meta name="keywords" content="中国,SEO,百度,バイドゥ,Baidu,検索エンジン,チャイナアドバイザー,china adviser" />
+<meta name="description" content="中国最大手検索エンジン 百度（バイドゥ）のSEO対策で検索エンジンは勿論、各百度サイトから多面的に集客するプロモーションです。" />
 
 <link rel="stylesheet" type="text/css" href="/css/common.css" />
 <link rel="stylesheet" type="text/css" href="/css/seo.css" />
@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
  
-<title>（Baidu）百度知道登録で中国SEOと貴社商品の理解促進サービス| チャイナアドバイザー</title>
+<title>百度（バイドゥ）SEO対策で中国で貴社サイトの集客力をUP | チャイナアドバイザー</title>
 </head>
 <body>
 

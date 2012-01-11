@@ -57,7 +57,7 @@
 <div id="top-inner" class="clearfix">
 
 
-{*<div class="top-box">
+<div class="top-box">
 <h2><a href="/seo"><img src="/img/index/top_tt09.jpg" alt="百度（baidu）SEOサービス" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
@@ -70,7 +70,7 @@
 </div>
 <div><a href="/seo"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
-</div>*}
+</div>
 
 <div class="top-box">
 <h2><a href="/weibo"><img src="/img/index/top_tt10.jpg" alt="ウェイボー（微博）運用代行サービス" /></a></h2>
