@@ -206,7 +206,7 @@
 
 <div class="top-wide-box">
 
-<div style="width:730px;text-align:center;" id="__ss_10928369"><iframe src="http://www.slideshare.net/slideshow/embed_code/10928369" width="595" height="497" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </div>
+<div style="width:728px;text-align:center;background-color:#CCCCCC;padding-bottom:20px;border:1px solid #ADADAD;" id="__ss_10928369"><iframe src="http://www.slideshare.net/slideshow/embed_code/10928369" width="595" height="497" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> </div>
 
 
 </div>
