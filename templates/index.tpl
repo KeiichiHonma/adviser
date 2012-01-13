@@ -98,7 +98,7 @@
 </div>
 </div>
 
-{*<div class="top-box">
+<div class="top-box">
 <h2><a href="/sem"><img src="/img/index/top_tt11.jpg" alt="百度（baidu）SEMサービス" /></a></h2>
 <div class="box-inner clearfix">
 <div class="box-img">
@@ -109,7 +109,7 @@
 </div>
 <div><a href="/sem"><img src="/img/common/bt_top_box_off.jpg" alt="詳細を見る" /></a></div>
 </div>
-</div>*}
+</div>
 
 <div class="top-box">
 <h2><a href="/kujapan"><img src="/img/index/top_tt03.jpg" alt="訪日中国人観光客集客サイト「日遊酷棒」" /></a></h2>

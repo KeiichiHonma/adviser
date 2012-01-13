@@ -41,7 +41,10 @@
             <td class="form_data">
             {if isset($smarty.post.check) && in_array("all_check",$smarty.post.check)}{$trigger.all_check}<input type="hidden" name="check[]" value="all_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("inbound_check",$smarty.post.check)}{$trigger.inbound_check}<input type="hidden" name="check[]" value="inbound_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("seo_check",$smarty.post.check)}{$trigger.seo_check}<input type="hidden" name="check[]" value="seo_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("weibo_check",$smarty.post.check)}{$trigger.weibo_check}<input type="hidden" name="check[]" value="weibo_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("pr_check",$smarty.post.check)}{$trigger.pr_check}<input type="hidden" name="check[]" value="pr_check" /><br />{/if}
+            {if isset($smarty.post.check) && in_array("sem_check",$smarty.post.check)}{$trigger.sem_check}<input type="hidden" name="check[]" value="sem_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("rapid_check",$smarty.post.check)}{$trigger.rapid_check}<input type="hidden" name="check[]" value="rapid_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("kujapan_check",$smarty.post.check)}{$trigger.kujapan_check}<input type="hidden" name="check[]" value="kujapan_check" /><br />{/if}
             {if isset($smarty.post.check) && in_array("bbs_check",$smarty.post.check)}{$trigger.bbs_check}<input type="hidden" name="check[]" value="bbs_check" /><br />{/if}

@@ -42,7 +42,7 @@ class commonPosition extends positionManager
     ),
     'sem'=>array
     (
-        'name'=>'百度（baidu）SEMサービス','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+        'name'=>'百度（baidu バイドゥ）SEM、リスティング広告サービス','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
     ),
     'seo'=>array
     (

@@ -6,7 +6,11 @@ class inquiryForm extends formManager
     (
         'all_check'=>'中国向けプロモーション全般',
         'inbound_check'=>'インバウンドプロモーション全般',
+        'seo_check'=>'百度SEO',
+        'weibo_check'=>'ウェイボー（微博）運用代行',
         'pr_check'=>'中国4大ポータル記事掲載保証 PR',
+        'sem_check'=>'百度リスティング広告',
+        
         'rapid_check'=>'中国語サイト快速サービス',
         'kujapan_check'=>'日遊酷棒（リーヨウクーバン）',
         'bbs_check'=>'中国BBS口コミPR',

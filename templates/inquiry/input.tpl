@@ -47,7 +47,13 @@
             
             <input lang="ja" type="checkbox" name="check[]"  class="radio" value="inbound_check" {if isset($smarty.post.check) && in_array("inbound_check",$smarty.post.check)} checked{/if} /><label for="inbound_check">&nbsp;<span>{$trigger.inbound_check}</span></label><br />
             
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="seo_check" {if isset($smarty.post.check) && in_array("seo_check",$smarty.post.check)} checked{/if} /><label for="seo_check">&nbsp;<span>{$trigger.seo_check}</span></label><br />
+
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="weibo_check" {if isset($smarty.post.check) && in_array("weibo_check",$smarty.post.check)} checked{/if} /><label for="weibo_check">&nbsp;<span>{$trigger.weibo_check}</span></label><br />
+
             <input lang="ja" type="checkbox" name="check[]"  class="radio" value="pr_check" {if isset($smarty.post.check) && in_array("pr_check",$smarty.post.check)} checked{/if} /><label for="pr_check">&nbsp;<span>{$trigger.pr_check}</span></label><br />
+
+            <input lang="ja" type="checkbox" name="check[]"  class="radio" value="sem_check" {if isset($smarty.post.check) && in_array("sem_check",$smarty.post.check)} checked{/if} /><label for="sem_check">&nbsp;<span>{$trigger.sem_check}</span></label><br />
 
             <input lang="ja" type="checkbox" name="check[]"  class="radio" value="rapid_check" {if isset($smarty.post.check) && in_array("rapid_check",$smarty.post.check)} checked{/if} /><label for="rapid_check">&nbsp;<span>{$trigger.rapid_check}</span></label><br />
 
