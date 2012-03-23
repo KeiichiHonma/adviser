@@ -22,7 +22,7 @@
 </div><!--#f-navi-->
 <div id="footer-bottom" class="clearfix">
 
-<div id="footer-group">[グループサイト] <a href="http://www.serviced-apartments-tokyo.com/">東京サービスアパートメント</a> | <a href="http://www.kujapan.com/">日遊酷棒</a></div>
+<div id="footer-group">[グループサイト] <a href="http://www.serviced-apartments-tokyo.com/">東京サービスアパートメント</a> | <a href="http://www.kujapan.com/">日遊酷棒</a> | <a href="http://www.tokyoapt-rent.com/">Tokyo Apartments Rent</a></div>
 
 <div id="copyright">
 <img src="/img/common/copyright.gif" alt="Copyroght (c) HACHIONE Inc. All Right Reserved." width="270" height="30" />
