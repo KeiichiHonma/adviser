@@ -1,3 +1,6 @@
+<div class="banner">
+<a href="http://www.k-tsushin.jp/inbound/search/details/008238/" target="_blank"><img src="/img/common/inbound30.gif" alt="インバウンド観光支援のプロフェッショナル30" /></a>
+</div>
 
 <div class="banner">
 <a href="http://www.chinabusiness-headline.com/author/yahagi/" target="_blank"><img src="/img/common/banner_headline.jpg" alt="中国ビジネスヘッドライン" /></a>
