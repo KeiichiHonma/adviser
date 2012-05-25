@@ -17,5 +17,9 @@
 </div>
 
 <div class="banner">
+<a href="http://www.813.co.jp/recruit/" target="_blank"><img src="/img/common/recruit_banner.jpg" alt="81採用情報" /></a>
+</div>
+
+<div class="banner">
 <a href="/tool/input"><img src="/img/common/banner_tool_off.jpg" alt="中国向けWEBサイトパフォーマンスツール" /></a>
 </div>
