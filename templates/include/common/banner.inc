@@ -3,6 +3,10 @@
 </div>
 
 <div class="banner">
+<a href="http://www.k-tsushin.jp/china100/search/details/000934/" target="_blank"><img src="/img/common/china100.gif" alt="中国100選" /></a>
+</div>
+
+<div class="banner">
 <a href="http://www.chinabusiness-headline.com/author/yahagi/" target="_blank"><img src="/img/common/banner_headline.jpg" alt="中国ビジネスヘッドライン" /></a>
 </div>
 
