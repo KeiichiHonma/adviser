@@ -177,7 +177,7 @@
 <h4><img src="/img/weibo/weibo05_img01.gif" alt="成果" /></h4>
 <h5>■概要</h5>
 <p>
-2011年9月に上海に進出した日本で人気のギャル系ブランド。日本で都内を中心に数十店舗を展開。上海では現在2店舗。Weiboをはじめとした、中国の若い女性との継続的なコミュニケーションをし続けアカウント開設から3ヶ月で10,000人のフォロワーを突破。</p>
+2011年9月に上海に進出した日本で人気のギャル系ブランド。日本で都内を中心に数十店舗を展開。上海では現在2店舗。Weiboをはじめとした、中国の若い女性との継続的なコミュニケーションをし続けアカウント開設から6ヶ月で50,000人のフォロワーを突破。</p>
 
 <h5>■施策</h5>
 <p>・3回/日のつぶやき<br />
@@ -186,7 +186,6 @@
 ・Sina主催キャンペーンへの参加<br />
 ・日本の店舗からの最新情報をUP</p>
 <img src="/img/weibo/weibo05_img02.jpg" alt="" />
-<a href="http://www.weibo.com/beberosecn" target="_blank">http://www.weibo.com/beberosecn</a>
 </div>
 <div class="weibo05-02">
 <h4><img src="/img/weibo/weibo05_img03.gif" alt="成果" /></h4>
@@ -203,7 +202,6 @@ Weibo開設は2011年10月。<br />
 ・Sina主催キャンペーンへの参加<br />
 ・日本の観光最新情報をUP</p>
 <img src="/img/weibo/weibo05_img04.jpg" alt="" />
-<a href="http://www.weibo.com/kujapan" target="_blank">http://www.weibo.com/kujapan</a>
 </div>
 </div>
 </div>
