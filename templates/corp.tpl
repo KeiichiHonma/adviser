@@ -50,7 +50,7 @@
     <h3 class="subttl">○東京オフィス</h3>
     〒150-0044<br />
     <p>東京都渋谷区円山町25-4<br />加藤ビル3F</p>
-    <p>Tel&nbsp;:&nbsp;03-6849-7226<br />Fax:&nbsp;03-6849-7563</p>
+    <p>Tel&nbsp;:&nbsp;03-5428-8307<br />Fax:&nbsp;03-5428-8308</p>
     <p>URL:&nbsp;<a href="http://www.813.co.jp/">http://www.813.co.jp/</a><br />Mail:&nbsp;{mailto address="info@813.co.jp" encode="hex" text="info@813.co.jp"}</p>
     
     <h3 class="subttl">○北京オフィス</h3>
