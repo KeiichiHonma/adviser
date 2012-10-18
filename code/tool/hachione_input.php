@@ -11,15 +11,14 @@ if($con->isPost){
     
 
     if($result && is_numeric($result)){
-        $performance_handle->addRow($_POST['check_url'],$result,0);
-        $con->safeExitRedirect('/tool/result?time='.$result);
-        
+        //$performance_handle->addRow($_POST['check_url'],$result,0);
+        $con->safeExitRedirect('/tool/hachione_result?time='.$result);
     }elseif(strcasecmp($result,'timeout') == 0){
-        $performance_handle->addRow($_POST['check_url'],0,1);
-        $con->safeExitRedirect('/tool/result?time=timeout');
+        //$performance_handle->addRow($_POST['check_url'],0,1);
+        $con->safeExitRedirect('/tool/hachione_result?time=timeout');
     }else{
-        $performance_handle->addRow($_POST['check_url'],0,3);
-        $con->safeExitRedirect('/tool/result?time=error');
+        //$performance_handle->addRow($_POST['check_url'],0,3);
+        $con->safeExitRedirect('/tool/hachione_result?time=error');
     }
 }
 $con->t->assign('h1','中国向けWebサイトパフォーマンスツール');

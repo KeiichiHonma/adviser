@@ -1,6 +1,10 @@
 <?php
 $ip = $_SERVER['REMOTE_ADDR'];
-
+/*if(file_exists('/usr/local/apache2/htdocs/adviser/log/uHSaNKwtMq')){
+var_dump('test');
+die();
+}
+*/
 //set_include_path('/usr/local/apache2/htdocs/adviser/include');
 define('WGET_LOG', '/usr/local/apache2/htdocs/adviser/log');
 $ini = parse_ini_file('/usr/local/apache2/htdocs/adviser/include/setting.ini', true);
@@ -29,16 +33,17 @@ if($ini['common']['isDebug'] == 0){//本番
 
 //ipアドレスチェック
 //$_SERVER['REMOTE_ADDR']
-if(strcasecmp($ip,$allow_ip) != 0){
+/*if(strcasecmp($ip,$allow_ip) != 0){
     print 'error';
     die();
-}
+}*/
 
 
 if(isset($_GET['check_url'])){
     $url = 'http://'.$_GET['check_url'];
     
 }
+
 //$url = 'http://cn.kujapan.apollon.corp.813.co.jp/';
 //$url = 'http://cn.kujapan.apollon.corp.813.co.jp/area/aid/1';
 
@@ -65,29 +70,35 @@ $second = 30;
 
 while (!$finished){
     $time = microtime(true) - $time_start;
-    
     //終了チェック
+    //sleep(5);
     if(file_exists(WGET_LOG.'/'.$rand)){
+
             $rt = file(WGET_LOG.'/'.$rand, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
             $last_line = array_pop($rt);
             $finish_check = ereg("^Downloaded", $last_line);
+            $finish_check_2 = ereg("^ダウンロード", $last_line);
+
+            if($finish_check !== FALSE || $finish_check_2 !== FALSE){
+                if($finish_check !== FALSE) $index = 5;
+                if($finish_check_2 !== FALSE) $index = 4;
+                
+                $finished = TRUE;
+                $last_line_explode = explode(' ',$last_line);
+                
+                if(!$last_line_explode) $error = TRUE;
+                
+                $total_time = str_replace('s','',$last_line_explode[$index]);
+                if(!is_numeric($total_time)) $error = TRUE;
+                @unlink(WGET_LOG.'/'.$rand);
+            }
     }
     
-    if($finish_check){
-        $finished = TRUE;
-        $last_line_explode = explode(' ',$last_line);
-        
-        if(!$last_line_explode) $error = TRUE;
-        
-        $total_time = str_replace('s','',$last_line_explode[5]);
-        if(!is_numeric($total_time)) $error = TRUE;
-        
-        @unlink(WGET_LOG.'/'.$rand);
-    }elseif($time > $second ){
+    if($time > $second ){
         $finished = TRUE;
         $timeout = TRUE;//適切な値を取得できなかったという理由でタイムアウト
         if(file_exists(WGET_LOG.'/'.$rand)){
-            
+            @unlink(WGET_LOG.'/'.$rand);
         }else{
             $error = TRUE;
         }

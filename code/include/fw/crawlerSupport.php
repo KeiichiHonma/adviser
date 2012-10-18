@@ -257,15 +257,15 @@ class crawlerSupport
                     case 'link':
                         $href = trim($element->href);
                         if($href == '') break;
-                        $this->handleTag($tag,'href',$href);
+                        //cssだけ <link rel="index" href="index.html" />とかあるので
+                        if ( preg_match("/.css/", $href) ) $this->handleTag($tag,'href',$href);
                     break;
 
-                    case 'script':
+/*                    case 'script':
                         $src = trim($element->src);
                         if($src == '') break;
                         $this->handleTag($tag,'src',$src);
-
-                    break;
+                    break;*/
 
                     case 'input':
                         $src = trim($element->src);
@@ -330,9 +330,10 @@ die();*/
     private function handleTag($tag,$attr,$src_or_href){
         //httpから始まる場合DL
         if(ereg("^http://", $src_or_href) !== FALSE){
-            
-            if($tag == 'src' && ereg("js$", $src_or_href) === FALSE){
+            if($tag == 'src' && preg_match("/.js/", $src_or_href) === FALSE){
                 //ファイル系のjavascriptじゃない。パラメータ系
+                //拡張子なしはプログラムという認識ですすめる。
+                //例）http://netweather.accuweather.com/adcbin/netweather_v2/netweatherV2ex.asp?partner=netweather&tStyle=whteYell&logo=1&zipcode=ASI|JP|JA031|OKAYAMA|&lang=eng&size=8&theme=blue&metric=0&target=_self
             }else{
                 $this->doWgetShell($src_or_href,$this->absolute_under_user_dir);
                 //DLファイルと同じ場所に配置
@@ -548,7 +549,7 @@ die();*/
     //wget
     private function doWgetShell($url,$full_path_dir){
         $arg = '';
-        $arg .= '-E '.$url;
+        $arg .= '-E "'.$url.'"';//"でエスケープしておかないと&とかでエラーになる
         $arg .= ' -e robots=off';
         $arg .= ' -P '.$full_path_dir;
         $arg .= ' -a '.SHELL_DIR.'/'.$this->user_dir.'/'.WGET_SUPPORT_LOG;
