@@ -31,7 +31,16 @@
 </div>
 
 <div class="tool-result">
-    <p class="t-box6">中国から見た場合、指定サイトの表示にかかる時間は</p>
+
+    <p class="hachione-t-box6">
+━━━━━━━━━━━━━━━━━━━━━━━━<br />
+測定日時：{$smarty.now|date_format:'%Y/%m/%d %H:%M:%S'}<br />
+測定URL ：http://{$check_url|mb_strimwidth:0:40:"..."}<br />
+━━━━━━━━━━━━━━━━━━━━━━━━<br />
+    </p>
+    <p class="hachione-t-box6-bottom">
+    中国から見た場合、指定サイトの表示にかかる時間は
+    </p>
     {if $time == "timeout"}
         <p class="t-box7-timeout">
         中国から閲覧することが非常に困難なサイトのため、<br />
@@ -65,9 +74,6 @@
         </p>
     {/if}
     
-    <div class="t-box9">
-    <a href="/rapid"><img src="/img/tool/banner_rapid_off.jpg" alt="" /></a>
-    </div>
     <p class="t-box8">
     ■参考測定数値<br />
     1秒以下：大変快速です<br />
@@ -76,7 +82,13 @@
     5 - 10秒以内：かなり遅く感じます<br />
     10秒以上:閲覧することが困難です<br />
     </p>
-
+    <p class="hachione-t-box8">
+        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br />
+        ■備考<br />
+        1、測定日時によって、測定結果は異なる場合がございますので、予めご了承ください。<br />
+        2、本ツールは北京からアクセスを行った際を想定しており、実際にアクセスする場所は環境等によっては、測定結果は異なる場合がございますので、予めご了承ください。<br />
+        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    </p>
     <div class="t-box10">
     <a href="/tool/hachione_input"><img src="/img/tool/tool_re_input_bt_off.jpg" alt=""  class="btn" /></a>
     </div>

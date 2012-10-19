@@ -73,6 +73,10 @@ class commonPosition extends positionManager
         (
             'name'=>'中国向けWEBサイトパフォーマンスツール','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
         ),
+        'hachione_result'=>array
+        (
+            'name'=>'中国向けWEBサイトパフォーマンスツール','func'=>null,'ssl'=>FALSE,'gnavi'=>null,'snavi'=>null
+        ),
     ),
     'inquiry'=>array
     (

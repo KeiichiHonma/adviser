@@ -680,6 +680,24 @@ padding:90px 0 10px 0;
 font-size:131%;
 font-weight:bold;
 }
+
+.hachione-t-box6 {
+text-align:center;
+width:500px;
+margin:0px auto 0px auto;
+padding:90px 0 10px 0;
+font-size:131%;
+/*font-weight:bold;*/
+}
+
+.hachione-t-box6-bottom {
+text-align:center;
+width:500px;
+margin:0px auto 0px auto;
+font-size:131%;
+font-weight:bold;
+}
+
 .t-box7 {
 text-align:center;
 width:150px;
@@ -705,6 +723,12 @@ padding:5px;
 .t-box8 {
 text-align:left;
 width:330px;
+margin:4px auto 10px auto;
+}
+
+.hachione-t-box8 {
+text-align:left;
+width:540px;
 margin:4px auto 10px auto;
 }
 

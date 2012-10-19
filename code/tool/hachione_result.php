@@ -7,6 +7,7 @@ if(!is_numeric($_GET['time']) && strcasecmp($_GET['time'],'timeout') != 0 && str
 
 $con->readyPostCsrf();
 $con->t->assign('time',$_GET['time']);
+$con->t->assign('check_url',urldecode($_GET['check_url']));
 $con->t->assign('h1','中国向けWebサイトパフォーマンスツール');
 $con->append();
 ?>
