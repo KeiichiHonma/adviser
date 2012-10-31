@@ -651,7 +651,8 @@ class database
             } else {
                 $toPutComma = TRUE;
             }
-            $left .= ereg("^_id", $key) == TRUE ? $key : DATABASE_COLUMN_PREFIX.$key;
+            
+            $left .= preg_match("/^_id/", $key) == 1 ? $key : DATABASE_COLUMN_PREFIX.$key;
             $right .= $this->checkValueType($val);//escape or null
         }
         $query .= '(';
@@ -680,8 +681,8 @@ class database
             } else {
                 $toPutComma = TRUE;
             }
-            //$query .= ' '.ereg("^_id", $key) == TRUE ? $key : DATABASE_COLUMN_PREFIX.$key.' = \''.$val.'\'';
-            $query .= ereg("^_id", $key) == TRUE ? $key : DATABASE_COLUMN_PREFIX.$key.' = '.$this->checkValueType($val);
+
+            $query .= preg_match("/^_id/", $key) == 1 ? $key : DATABASE_COLUMN_PREFIX.$key.' = '.$this->checkValueType($val);
         }
         if ( count( $this->_conditions ) > 0 )
         {

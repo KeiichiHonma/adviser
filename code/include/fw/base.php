@@ -214,7 +214,7 @@ class base
         $i = 0;
         foreach ($exp as $key => $value){
             //現在の値の状況を確認
-            $bl_current_url = ereg($uri->url_pattern, $value);
+            $bl_current_url = preg_match($uri->url_pattern, $value) == 1 ? TRUE : FALSE;
             $bl_current_end_br = preg_match('/[\r\n]$/', $value);//文末が改行か
             $bl_current_start_br = preg_match('/^[\r\n]/', $value);//文頭が改行か
             if($isAutoLink == SMARTY_BOOL_ON && $bl_current_url){

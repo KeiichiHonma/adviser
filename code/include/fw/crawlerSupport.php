@@ -329,7 +329,7 @@ die();*/
     //img 再生成
     private function handleTag($tag,$attr,$src_or_href){
         //httpから始まる場合DL
-        if(ereg("^http://", $src_or_href) !== FALSE){
+        if(preg_match("/^http:/", $src_or_href) == 1){
             if($tag == 'src' && preg_match("/.js/", $src_or_href) === FALSE){
                 //ファイル系のjavascriptじゃない。パラメータ系
                 //拡張子なしはプログラムという認識ですすめる。
@@ -345,16 +345,6 @@ die();*/
         //ロールオーバー画像取得
         if($tag == 'img' || $tag == 'input') $this->wgetOnImage($src_or_href,$this->absolute_under_user_dir);
     }
-
-/*    private function handleCSSImport($import_file){
-        //httpから始まる場合DL
-        if(ereg("^http://", $import_file) !== FALSE){
-            //一旦何もしない？仕様かなぁ CSSの中身まで書き換えたくない
-        }else{
-            //css読み込み
-            $this->doWgetShell($import_file,$this->absolute_under_user_dir);
-        }
-    }*/
 
     private function handleSEO($tag,$seo,$meta_name = ''){
         //htmlの書き換えが必要なため、置換配列にセット
@@ -394,7 +384,7 @@ die();*/
 
     //onを付与する前のsrcを取得してwget
     private function wgetOnImage($src,$absolute_under_user_dir){
-        $is_http = ereg("^http://", $src);
+        $is_http = preg_match("/^http:/", $src) == 1 ? TRUE : FALSE;
         $pathinfo = pathinfo($src);
         
         //httpから始まる場合、ページと同じ場所に保存
@@ -413,11 +403,6 @@ die();*/
         if(is_null($url_save_path_array)) return FALSE;
 
         //on画像専用の文字列を付与するために、offや拡張子を一時的に除去してon画像用文字列を付与
-/*        $is_end_off = ereg("off$", $pathinfo['filename']);
-        $extension_len = strlen($pathinfo['extension']) + 1;//拡張子文字数 .分の1を追加
-        $off_len = $is_end_off !== FALSE ? 3 : 0;
-        $len = strlen($url_save_path_array['url_path']) - $off_len - $extension_len;*/
-        
         $new_src = substr($url_save_path_array['url_path'],0,$len);
         if(!is_null($this->rollover_string) && count($this->rollover_string) > 0){
             //キーが置換対象、要素が置換後
@@ -428,7 +413,7 @@ die();*/
                     //置換文字列がないパターン
                     $is_end_key = TRUE;
                 }else{
-                    $is_end_key = ereg("$key$", $pathinfo['filename']);
+                    $is_end_key = preg_match("$key$", $pathinfo['filename']) == 1 ? TRUE : FALSE;
                 }
                 
                 //マッチした画像のみwgetする
@@ -579,37 +564,5 @@ die();*/
         fclose( $fp );
         //return $temp_filename;
     }
-
-    /*    
-    formは特殊処理.actionの向き先をhttpから始まる日本側へと再度向ける
-    wgetはformのactionを変更しないため、ユーザー側が相対パスを指定していた場合の処理となる
-    とおもったらwgetは相対パスで記載されているformのactionをURL付きに戻してくれる模様
-    不必要な処理
-    */
-/*    private function handleForm($action){
-        //httpから始まる場合DL
-        if(ereg("^http://", $action) !== FALSE){
-            return TRUE;//何もすることはありませｎ
-        }else{
-            $new_action = $this->user_url.'/'.$this->getParentSavePath($this->absolute_under_user_dir,$action);
-            //htmlの書き換えが必要なため、置換配列にセット
-            $this->resetAttrValue('form','action',$new_action,'action',$action);
-        }
-    }*/
-
-    //Pavuk はURLがわかっていれば保存ディレクトリを指定しなくてもトップディレクトリさえ指定していれば勝手に保存
-    //しかもCSS取得専用。
-/*    private function doPavuk($url){
-        $arg = '';
-        
-        //$arg .= ' -cdir '.$save_path_dir;
-        $arg .= ' -cdir '.$this->absolute_user_dir;
-        
-        $arg .= ' -noRobots';
-        $arg .= ' -mode mirror';
-        $arg .= ' -base_level 2';
-        $arg .= ' '.$url;
-        exec('/usr/local/bin/pavuk'.$arg,$out,$ret);
-    }*/
 }
 ?>
