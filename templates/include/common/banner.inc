@@ -3,6 +3,10 @@
 </div>
 
 <div class="banner">
+<a href="http://www.k-tsushin.jp/inbound/search/details/008238/" target="_blank"><img src="/img/common/inbound30.gif" alt="インバウンド観光支援のプロフェッショナル30" /></a>
+</div>
+
+<div class="banner">
 <a href="http://www.k-tsushin.jp/china100/search/details/000934/" target="_blank"><img src="/img/common/china100.gif" alt="中国100選" /></a>
 </div>
 
