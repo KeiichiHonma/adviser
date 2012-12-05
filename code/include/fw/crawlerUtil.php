@@ -75,7 +75,7 @@ class crawlerUtil
         if($con->isStage){
             $contents .= 'rsync -vrt --delete -e ssh '.WGET_DIR.'/'.$user_dir_name.' '.CHINA_DOCUMENT_ROOT;
         }else{
-            $contents .= 'su apache -c "rsync -vrt --delete -e ssh '.WGET_DIR.'/'.$user_dir_name.' '.$apache.':'.CHINA_DOCUMENT_ROOT.'"';
+            $contents .= 'su apache -c "rsync -vrt --delete -e \'ssh -p 34581\' '.WGET_DIR.'/'.$user_dir_name.' '.$apache.':'.CHINA_DOCUMENT_ROOT.'"';
         }
         fputs($fp,$contents);
         fclose( $fp );
