@@ -588,7 +588,26 @@ class simple_html_dom {
         if ($filepath!=='') file_put_contents($filepath, $ret);
         return $ret;
     }
-
+    
+    function savetest($filepath='',$isICP,$replace = null) {
+        $ret = $this->root->innertext();
+var_dump($ret);
+die();
+        //保存直前にICP追記
+        if($isICP != ''){
+           $ret = str_replace(array('</body>','</BODY>'),array($isICP.'</body>',$isICP.'</BODY>'),$ret);
+        }
+        //保存直前に予約文字列置換
+var_dump($ret);
+die();
+        if(!is_null($replace)){
+           $ret = str_replace(array_keys($replace),array_values($replace),$ret);
+        }
+var_dump($ret);
+die();
+        if ($filepath!=='') file_put_contents($filepath, $ret);
+        return $ret;
+    }
     // find dom node by css selector
     function find($selector, $idx=null) {
         return $this->root->find($selector, $idx);

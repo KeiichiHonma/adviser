@@ -19,8 +19,6 @@ class crawlerSupport
     private $finish_image_csv_handle = FALSE;
     
     private $handleTagList = array('img','link','script','input','meta','title');
-    //private $handleTagList = array('meta','title');
-    
     public $html_files = array();
     private $css_files = array();
     private $html = '';
@@ -32,7 +30,7 @@ class crawlerSupport
     //private $rollover_string = array('_on','on');
     private $rollover_string = null;
     private $replace_html = array();//htmlファイルの中で置換が必要なソースリスト. key => value keyをvalueで変換
-    private $icp_html = "\n北京九五太维资讯有限公司\n京ICP证040867号-3\n京公网安备110105008661号\n";
+    private $icp_html = "\n<span style=\"background:#ffffff;color:#000000;\">北京九五太维资讯有限公司\n京ICP证040867号-3\n京公网安备110105008661号</span>\n";
     
     private $replace_array = null;
     
@@ -149,7 +147,7 @@ class crawlerSupport
         //ロールオーバー画像get準備
         if(!is_null($this->rollover_string)){
             //get終了リスト
-            if(file_exists($this->finish_image_log)){
+/*            if(file_exists($this->finish_image_log)){
                 //古いリストかチェック
                 $finfo = stat($this->finish_image_log);
                 if(time() - $finfo['mtime'] > 86400) {
@@ -189,7 +187,7 @@ class crawlerSupport
                     unlink($this->wget_pass_log);
                     
                 }
-            }
+            }*/
         }
         
         
@@ -210,7 +208,7 @@ class crawlerSupport
         $this->analyzeHtmlSource($html_file);
         
         //finish_image書き込み
-        if(count($this->finish_new_image) > 0) $this->finishImageWriter();
+        //if(count($this->finish_new_image) > 0) $this->finishImageWriter();
         
         //if($this->finish_image_csv_handle !== FALSE) fclose( $this->finish_image_csv_handle );
     }
@@ -239,12 +237,8 @@ class crawlerSupport
         $ret = FALSE;
         unset($this->html);
         $this->html = '';
-        //$this->dumpMemory();
-        //sleep(5);
         $this->html = file_get_html($this->absolute_under_user_dir.'/'.$html_file);
-        //sleep(5);
-        //$this->dumpMemory();
-        //sleep(5);
+
         foreach ($this->handleTagList as $tag){
             foreach($this->html->find($tag) as $element){
                 switch ($tag){
@@ -258,7 +252,9 @@ class crawlerSupport
                         $href = trim($element->href);
                         if($href == '') break;
                         //cssだけ <link rel="index" href="index.html" />とかあるので
-                        if ( preg_match("/.css/", $href) ) $this->handleTag($tag,'href',$href);
+                        if ( preg_match("/.css/", $href) ){
+                            $this->handleTag($tag,'href',$href);
+                        }
                     break;
 
 /*                    case 'script':
@@ -290,9 +286,6 @@ class crawlerSupport
                 }
             }
         }
-/*var_dump($this->wget_list);
-die();*/
-        //上書き保存
         $this->html->save($this->absolute_under_user_dir.'/'.$html_file,$this->icp_html,$this->replace_array);
         //echo $this->html; die();
     }
@@ -335,11 +328,38 @@ die();*/
                 //拡張子なしはプログラムという認識ですすめる。
                 //例）http://netweather.accuweather.com/adcbin/netweather_v2/netweatherV2ex.asp?partner=netweather&tStyle=whteYell&logo=1&zipcode=ASI|JP|JA031|OKAYAMA|&lang=eng&size=8&theme=blue&metric=0&target=_self
             }else{
-                $this->doWgetShell($src_or_href,$this->absolute_under_user_dir);
+                if($tag == 'link'){
+                    if(preg_match("{^http://www.okayama-japan.jp}", $src_or_href) == 1){//special
+                        $path = str_replace('http://www.okayama-japan.jp/cn/','',$src_or_href);// css/site.css
+                        $ex_path = explode('/',$path);
+                        $this->doWgetShell($src_or_href,$this->absolute_under_user_dir.'/'.$ex_path[0]);
+                    }
+                }else{
+                    $this->doWgetShell($src_or_href,$this->absolute_under_user_dir);
+                    //DLファイルと同じ場所に配置
+                    $pathinfo = pathinfo($src_or_href);
+                    //$this->resetAttrValue($tag,$attr,$pathinfo['filename'].'.'.$pathinfo['extension'],$attr,$src_or_href);
+                }
+
+                
+                
                 //DLファイルと同じ場所に配置
-                $pathinfo = pathinfo($src_or_href);
-                $this->resetAttrValue($tag,$attr,$pathinfo['filename'].'.'.$pathinfo['extension'],$attr,$src_or_href);
+                //$pathinfo = pathinfo($src_or_href);
+                //$this->resetAttrValue($tag,$attr,$pathinfo['filename'].'.'.$pathinfo['extension'],$attr,$src_or_href);
+                
             }
+/*            if(preg_match("{^http://www.okayama-japan.jp}", $src_or_href) != 1){//special
+                if($tag == 'src' && preg_match("/.js/", $src_or_href) === FALSE){
+                    //ファイル系のjavascriptじゃない。パラメータ系
+                    //拡張子なしはプログラムという認識ですすめる。
+                    //例）http://netweather.accuweather.com/adcbin/netweather_v2/netweatherV2ex.asp?partner=netweather&tStyle=whteYell&logo=1&zipcode=ASI|JP|JA031|OKAYAMA|&lang=eng&size=8&theme=blue&metric=0&target=_self
+                }else{
+                    $this->doWgetShell($src_or_href,$this->absolute_under_user_dir);
+                    //DLファイルと同じ場所に配置
+                    $pathinfo = pathinfo($src_or_href);
+                    $this->resetAttrValue($tag,$attr,$pathinfo['filename'].'.'.$pathinfo['extension'],$attr,$src_or_href);
+                }
+            }*/
         }
         
         //ロールオーバー画像取得
@@ -394,7 +414,7 @@ die();*/
             $url_save_path_array = array('url_path'=>$this->createUri($this->html_url,$src),'save_path'=>$this->getFilePath($this->absolute_user_dir.$this->make_apath($this->html_url,$src)));
             //getするかチェック
             if(array_search($url_save_path_array['url_path'],$this->finish_image) !== FALSE || array_search($url_save_path_array['url_path'],$this->finish_new_image) !== FALSE ){
-                print $url_save_path_array['url_path'].':pass'."\n";
+                //print $url_save_path_array['url_path'].':pass'."\n";
                 return FALSE;
             }else{
                 $this->finish_new_image[] = $url_save_path_array['url_path'];//書き込み用
@@ -413,7 +433,8 @@ die();*/
                     //置換文字列がないパターン
                     $is_end_key = TRUE;
                 }else{
-                    $is_end_key = preg_match("$key$", $pathinfo['filename']) == 1 ? TRUE : FALSE;
+                    $string = $key.'$';
+                    $is_end_key = preg_match("/$string/", $pathinfo['filename']) == 1 ? TRUE : FALSE;
                 }
                 
                 //マッチした画像のみwgetする
@@ -504,11 +525,12 @@ die();*/
         $tmp = array();
         $a = array();
         $b = array();
-        $tmp = split('/',$parse['path']);
+        //$tmp = split('/',$parse['path']);
+        $tmp = explode('/',$parse['path']);
         foreach ($tmp as $v){
             if ($v){  array_push($a,$v); }
         }
-        $b = split('/',$rel_path);
+        $b = explode('/',$rel_path);
         foreach ($b as $v){
             if ( strcmp($v,'')==0 ){ continue; }
             elseif ($v=='.'){}
@@ -542,11 +564,26 @@ die();*/
         $arg .= ' -nH';//トップディレクトリを作成しない
         $arg .= ' -N';//タイムスタンプが新しいファイルだけ（更新されたファイルだけ）ダウンロードします。
         $arg .= ' --restrict-file-names=nocontrol';//URLエンコードされた文字列をエスケープせずに取得
+        $arg .= ' -np';//親NG
         $arg .= ' --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"';
         //exec('/usr/local/bin/wget '.$arg,$out,$ret);
         system('/usr/local/bin/wget '.$arg);
     }
-
+    private function doWgetShelltest($url,$full_path_dir){
+        $arg = '';
+        $arg .= '-E "'.$url.'"';//"でエスケープしておかないと&とかでエラーになる
+        $arg .= ' -e robots=off';
+        $arg .= ' -P '.$full_path_dir;
+        $arg .= ' -a '.SHELL_DIR.'/'.$this->user_dir.'/'.WGET_SUPPORT_LOG;
+        $arg .= ' -nd';//ディレクトリを作成しない
+        $arg .= ' -nH';//トップディレクトリを作成しない
+        $arg .= ' -N';//タイムスタンプが新しいファイルだけ（更新されたファイルだけ）ダウンロードします。
+        $arg .= ' --restrict-file-names=nocontrol';//URLエンコードされた文字列をエスケープせずに取得
+        $arg .= ' -np';//親NG
+        $arg .= ' --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"';
+        //exec('/usr/local/bin/wget '.$arg,$out,$ret);
+        system('/usr/local/bin/wget '.$arg);
+    }
 
     private function finishImageWriter(){
         $fp = fopen( $this->finish_image_log, "a+" );

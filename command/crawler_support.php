@@ -52,10 +52,16 @@ if($seo_tmp){
 //rolloverの文字列チェック
 $rollover = null;
 if(strlen($user[0]['col_rollover']) > 0){
-    $split = split("\n", $user[0]['col_rollover']);
-    foreach ($split as $value){
-        $split2 = split(',',trim($value));
-        if(count($split2) == 2) $tmp_rollover[$split2[0]] = $split2[1];
+    //$split = @split("\n", $user[0]['col_rollover']);
+    $explode = explode("\n", $user[0]['col_rollover']);
+    if(is_array($explode)){
+        foreach ($explode as $value){
+            $explode2 = explode(',',trim($value));
+            if(count($explode2) == 2) $tmp_rollover[$explode2[0]] = $explode2[1];
+        }
+    }else{
+        $explode2 = explode(',',trim($user[0]['col_rollover']));
+        if(count($explode2) == 2) $tmp_rollover[$explode2[0]] = $explode2[1];
     }
     if(is_array($tmp_rollover) && count($tmp_rollover) > 0) $rollover = $tmp_rollover;
     //$rollover = $user[0]['col_rollover'];
@@ -65,11 +71,18 @@ if(strlen($user[0]['col_rollover']) > 0){
 $replace = null;
 
 if(strlen($user[0]['col_replace']) > 0){
-    $split = split("\n", $user[0]['col_replace']);
-    foreach ($split as $value){
-        $split2 = split(',',trim($value));
-        if(count($split2) == 2) $tmp_replace[$split2[0]] = $split2[1];
+    //$split = split("\n", $user[0]['col_replace']);
+    $explode = explode("\n", $user[0]['col_replace']);
+    if(is_array($explode)){
+        foreach ($explode as $value){
+            $explode2 = explode(',',trim($value));
+            if(count($explode2) == 2) $tmp_replace[$explode2[0]] = $explode2[1];
+        }
+    }else{
+        $explode2 = explode(',',trim($user[0]['col_replace']));
+        if(count($explode2) == 2) $tmp_replace[$explode2[0]] = $explode2[1];
     }
+
     if(is_array($tmp_replace) && count($tmp_replace) > 0) $replace = $tmp_replace;
 
 /*var_dump(array_keys($replace));

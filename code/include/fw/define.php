@@ -11,6 +11,7 @@ define('USER_SHELL_FILE', 'userCrawler.sh');//ユーザーマスターシェル
 define('HTML_SHELL_FILE', 'htmlCrawler.sh');//htmlごとにまとめたシェル
 
 define('CRAWLER_SUPPORT_PHP_FILE',   'crawler_support.php');
+define('CRAWLER_SUPPORT_PHP_FILE_OKAYAMA',   'crawler_support_okayama.php');
 define('MAKE_SHELL_PHP_FILE',   'make_shell.php');
 
 define('FINISH_IMAGE_LOG', 'finish_image.log');
