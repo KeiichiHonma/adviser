@@ -49,17 +49,25 @@ class crawlerUtil
         if(isset($depth) && is_numeric($depth) && $depth > 1) $depth_string .= ' -r -l '.$depth;
         $contents .= 'rm -rf '.WGET_DIR.'/'.$user_dir_name."\n";
         $contents .= 'mkdir '.WGET_DIR.'/'.$user_dir_name."\n";
-        //
-        $contents .= '/usr/local/bin/wget -P '.WGET_DIR.'/'.$user_dir_name.' -D'.$domain_string.' -N -e robots=off -nH'.$depth_string.' --restrict-file-names=nocontrol -np --page-requisites -k -o '.SHELL_DIR.'/'.$user_dir_name.'/'.WGET_MASTER_LOG.' --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"'.' -np -E '.$url."\n";
+
+        //okayamaだけ -H つけます
+        if($user_dir_name == 'okayama'){
+            $contents .= '/usr/local/bin/wget -P '.WGET_DIR.'/'.$user_dir_name.' -D'.$domain_string.' -N -e robots=off -nH'.$depth_string.' --restrict-file-names=nocontrol --page-requisites -k -o '.SHELL_DIR.'/'.$user_dir_name.'/'.WGET_MASTER_LOG.' --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"'.' -H -np -E '.$url."\n";
+        }else{
+            $contents .= '/usr/local/bin/wget -P '.WGET_DIR.'/'.$user_dir_name.' -D'.$domain_string.' -N -e robots=off -nH'.$depth_string.' --restrict-file-names=nocontrol --page-requisites -k -o '.SHELL_DIR.'/'.$user_dir_name.'/'.WGET_MASTER_LOG.' --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"'.' -np -E '.$url."\n";
+        }
+        
 
         //--restrict-file-names=nocontrol URLエンコードされた文字列をエスケープせずに取得
         //-np 親ディレクトリを含めない。 /cn/ /hg/ があったとして /hg/を取りに行かない
         if(strlen($direct) > 0){
-            $direct_split = split("\n", $direct);
-            foreach ($direct_split as $value){
-                $contents .= '/usr/local/bin/wget -P '.WGET_DIR.'/'.$user_dir_name.' -D'.$domain_string.' -N -e robots=off -nH'.$depth_string.' --restrict-file-names=nocontrol -np --page-requisites -k --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"'.' -np -E '.trim($value)."\n";
+            //$direct_split = split("\n", $direct);
+            $direct_explode = explode("\n",$direct);
+            if($direct_explode !== FALSE){
+                foreach ($direct_explode as $value){
+                    $contents .= '/usr/local/bin/wget -P '.WGET_DIR.'/'.$user_dir_name.' -D'.$domain_string.' -N -e robots=off -nH'.$depth_string.' --restrict-file-names=nocontrol --page-requisites -k --user-agent="Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)"'.' -np -E '.trim($value)."\n";
+                }
             }
-
         }
 
 
