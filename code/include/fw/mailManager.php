@@ -203,6 +203,101 @@ class mailManager
         $this->append();
     }
 
+    public function sendTumblrInquiry($isHachione = FALSE){
+        require_once('inquiry/form.php');
+        $form = new inquiryForm();
+        if($isHachione){
+            $this->setHachioneTo();
+        }else{
+            $this->setInquiryTo($_POST['mail']);
+        }
+        
+        $subject = $isHachione ? '[China Adviser]ブログ経由でお問い合わせがありました' : '[China Adviser]お問い合わせありがとうございます';
+        $this->mail->subject($subject);
+        
+        $message = '';
+        $message .= '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'."\n";
+        $message .= 'このメールは、登録メールアドレス宛に自動的にお送りしています。'."\n";
+        $message .= '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'."\n";
+
+
+        $message .= $_POST['name']." 様\n\n";
+        $message .= 'この度は[China Adviser]へのお問い合わせ誠にありがとうございます'."\n\n";
+
+        $message .= "お問い合わせ内容----------------------------------------------------\n";
+        if(isset( $_POST['company'])){
+            $message .= '●会社名'."\n";
+            $message .= $_POST['company']."\n\n";
+        }
+
+        if(isset( $_POST['name'])){
+            $message .= '●氏名'."\n";
+            $message .= $_POST['name']."\n\n";
+        }
+        
+
+        if(isset( $_POST['kana'])){
+            $message .= '●氏名（フリガナ）'."\n";
+            $message .= $_POST['kana']."\n\n";
+        }
+
+        if(isset( $_POST['mail'])){
+            $message .= '●メールアドレス'."\n";
+            $message .= $_POST['mail']."\n\n";
+        }
+
+        if(isset( $_POST['telephone'])){
+            $message .= '●電話番号'."\n";
+            $message .= $_POST['telephone']."\n\n";
+        }
+
+        if(isset( $_POST['address'])){
+            $message .= '●住所'."\n";
+            $message .= $_POST['address']."\n\n";
+        }
+
+        if(isset( $_POST['check'] ) && count($_POST['check']) > 0 ){
+            $message .= '●お問い合わせ内容'."\n";
+            foreach ($form->trigger as $key => $value){
+                if(in_array($key,$_POST['check'])){
+                    $message .= $form->trigger[$key];
+                    if($key == 'etc_check' && isset($_POST['etc_name'])){
+                        $message .= ' '.$_POST['etc_name'];
+                    }
+                    $message .= "\n";
+                }
+            }
+        }
+
+        if(isset( $_POST['detail'])){
+            $message .= '●ご質問など'."\n";
+            $message .= $_POST['detail']."\n";
+        }
+
+        if(!$isHachione){
+            $message .= "\n".'後日、担当者よりご連絡させていただきます。'."\n";
+            $message .= '今後とも「China Adviser」を宜しくお願いいたします。 '."\n";
+
+            $message .= "\n".'━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━'."\n";
+            $message .= '┏┏┏ 株式会社81(ハチワン)'."\n";
+            $message .= '┏┏┏ +世界をつなぎ、世界を身近に+'."\n";
+            $message .= '┏┏┏ URL : http://www.813.co.jp/'."\n";
+            $message .= '┏┏┏ Mail: info@813.co.jp'."\n";
+            $message .= '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━';
+
+        }
+
+        $this->mail->text($message);
+        
+        $from = array
+        (
+            array( 'info@813.co.jp' , '株式会社ハチワン' )
+        );
+        $this->mail->from( $from );
+        $this->mail->send();
+        $this->append();
+    }
+
     public function sendPartnerInquiry($isHachione = FALSE){
         if($isHachione){
             $this->setHachioneTo();
