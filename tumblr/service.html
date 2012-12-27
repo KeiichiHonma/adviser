@@ -28,10 +28,8 @@
     <meta name="text:Disqus Shortname" content="" />
 
     <style type="text/css" media="screen">
-
     {CustomCSS}
     </style>
-
     <link rel="stylesheet" type="text/css" href="http://www.china-adviser.com/css/tumblr.css"  media="screen" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script type="text/javascript">
@@ -86,23 +84,18 @@
 
     <div id="wrapper">
         <div id="header">
+
             <div id="branding">
                 <h1>
                     {block:IfHeaderImage}<img src="{image:Header}" alt="{Title}" />{/block:IfHeaderImage}
                 </h1>
             </div><!-- #branding -->
 
-            <ul id="header_icon">
-                <li><a href="https://www.facebook.com/china.adviser.blog" target="_blank"><img src="http://www.china-adviser.com/img/tumblr/facebook.png" alt="FaceBook"></a></li>
-                <li><a href="https://twitter.com/china_adviser" target="_blank"><img src="http://www.china-adviser.com/img/tumblr/Twitter_alt.png"  alt="Twitter"></a></li>
-                <li><a href="http://blog.china-adviser.com/rss"><img src="http://www.china-adviser.com/img/tumblr/rss.png" alt="RSS Feed"></a></li>
-            </ul>
-
             <div id="global">
             <ul>
-            <li><img src="http://www.china-adviser.com/img/tumblr/gnavi_home_on.gif" alt="HOME" width="170" height="40"></li>
+            <li><a href="http://blog.china-adviser.com/"><img src="http://www.china-adviser.com/img/tumblr/gnavi_home_off.gif" alt="SERVICE" width="170" height="40"></a></li>
             <li><a href="http://blog.china-adviser.com/archive"><img src="http://www.china-adviser.com/img/tumblr/gnavi_archives_off.gif" alt="ARCHIVES" width="170" height="40"></a></li>
-            <li><a href="http://service.china-adviser.com/"><img src="http://www.china-adviser.com/img/tumblr/gnavi_service_off.gif" alt="SERVICE" width="170" height="40"></a></li>
+            <li><img src="http://www.china-adviser.com/img/tumblr/gnavi_service_on.gif" alt="SERVICE" width="170" height="40"></li>
             <li><a href="http://company.china-adviser.com/"><img src="http://www.china-adviser.com/img/tumblr/gnavi_company_off.gif" alt="COMPANY" width="170" height="40"></a></li>
             <li><a href="http://contact.china-adviser.com/"><img src="http://www.china-adviser.com/img/tumblr/gnavi_contact_off.gif" alt="CONTACT" width="170" height="40"></a></li>
             </ul>
@@ -112,153 +105,133 @@
         <div id="main">
             <div id="container">
                 <div id="content">
-                {block:Posts}
-                    <div id="post-{PostID}" class="post {block:Text}post-type-text{/block:Text}{block:Photo}post-type-photo{/block:Photo}{block:Photoset}post-type-photoset{/block:Photoset}{block:Quote}post-type-quote{/block:Quote}{block:Link}post-type-link{/block:Link}{block:Chat}post-type-chat{/block:Chat}{block:Video}post-type-video{/block:Video}{block:Audio}post-type-audio{/block:Audio}">
-                        <div class="post-meta">
-                        {block:Date}
-                            <div class="date">
-                                {Month} {DayOfMonthWithZero}, {Year}
-                            </div><!-- .date -->
-                        {/block:Date}
-                        {block:IfDisqusShortname}
-                            <div class="comments">
-                                <a href="{Permalink}#disqus_thread">0 comments</a>
-                            </div>
-                        {/block:IfDisqusShortname}
-                        {block:NoteCount}
-                            <div class="note-count">
-                                <a href="{Permalink}#notes">{NoteCountWithLabel}</a>
-                            </div><!-- .note-count -->
-                        {/block:NoteCount}
-                        </div><!-- .post-meta -->
-                        <div class="post-content">
-                        
-                        <div id="article_head">
-                        <div id="article_main" class="clearfix">
-                        {block:Text}
-                            {block:Title}<h2 class="title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
 
-                        {block:Permalink}
-<div id="block_social_plug_head">
-    <div class="social_plug">
-    <iframe src="//www.facebook.com/plugins/like.php?&amp;href={Permalink}&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-    </div>
 
-    <div class="social_plug">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{Permalink}">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-
-    <div class="social_plug">
-        <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-size="medium" data-href="{Permalink}"></div>
-        <!-- Place this tag after the last +1 button tag. -->
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-    </div>
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt09.jpg" alt="百度（baidu）SEOサービス" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/seo"><img src="http://www.china-adviser.com/img/index/top_box_img09.jpg" alt="百度（baidu）SEOサービス" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>中国最大の検索エンジン百度（baidu）のSEOサービスです。
+百度独自のアルゴリズムを把握し、
+百度の運営するあらゆるサイトから貴社サイト集客をします。</p>
+</div>
+</div>
 </div>
 
-                        {/block:Permalink}
-
-                            {Body}
-                        {/block:Text}
-                        {block:Photo}
-                            {LinkOpenTag}<img src="{PhotoURL-500}" class="photo" alt="{PhotoAlt}" />{LinkCloseTag}
-                            {block:HighRes}<a href="{PhotoURL-HighRes}" class="high-res" target="_blank"></a>{/block:HighRes}
-                            {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-                        {/block:Photo}
-                        {block:Photoset}
-                            {Photoset-500}
-                            {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-                        {/block:Photoset}
-                        {block:Quote}
-                            <div class="quote-content">"{Quote}"</div>
-                            {block:Source}<p class="quote-source">&mdash; {Source}</p>{/block:Source}
-                        {/block:Quote}
-                        {block:Link}
-                            <div class="link-wrap"><a href="{URL}" {Target}>{Name}</a></div>
-                            {block:Description}<div class="description">{Description}</div>{/block:Description}
-                        {/block:Link}
-                        {block:Chat}
-                            {block:Title}<h3><a href="{Permalink}">{Title}</a></h3>{/block:Title}
-                            <ul class="chat-wrap">
-                            {block:Lines}
-                                <li class="{Alt} user_{UserNumber}">
-                                    {block:Label}<span class="label">{Label}</span>{/block:Label}
-                                    {Line}
-                                </li>
-                            {/block:Lines}
-                            </ul>
-                        {/block:Chat}
-                        {block:Video}
-                            <div class="video-wrap">{Video-500}</div>
-                            {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-                        {/block:Video}
-                        {block:Audio}
-                            <div class="audio-wrap">{AudioPlayerGrey}</div>
-                            {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-                        {/block:Audio}
-                        {block:HasTags}
-                            <div class="tags">
-                                <p>Tags: {block:Tags}<a href="{TagURL}" class="single-tag">{Tag}</a> {/block:Tags}</p>
-                            </div>
-                        {/block:HasTags}
-
-                        {block:Permalink}
-<div id="block_social_plug_foot">
-    <div class="social_plug">
-    <iframe src="//www.facebook.com/plugins/like.php?&amp;href={Permalink}&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-    </div>
-
-    <div class="social_plug">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{Permalink}">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-
-    <div class="social_plug">
-        <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-size="medium" data-href="{Permalink}"></div>
-        <!-- Place this tag after the last +1 button tag. -->
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-    </div>
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt10.jpg" alt="ウェイボー（微博）運用代行サービス" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/weibo"><img src="http://www.china-adviser.com/img/index/top_box_img10.jpg" alt="ウェイボー（微博）運用代行サービス" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>貴社のウェイボーを運営代行することにより貴社の中国でのプレゼンスを向上させるサービスです。</p>
+</div>
+</div>
 </div>
 
-                        {/block:Permalink}
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt01.jpg" alt="中国4大ポータル記事掲載保証 PR" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/pr"><img src="http://www.china-adviser.com/img/index/top_box_img01.jpg" alt="中国4大ポータル記事掲載保証 PR" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>合計200億PV/日、2.7億ユーザを誇る中国の4大ポータルサイトに貴社の記事を中国語で掲載保証するPRサービスです。</p>
+</div>
+</div>
+</div>
 
-                        {block:Permalink}<div class="fb-comments" data-href="{Permalink}" data-width="540" data-num-posts="3"></div>{/block:Permalink}
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt11.jpg" alt="百度（baidu）SEMサービス" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/sem"><img src="http://www.china-adviser.com/img/index/top_box_img11.jpg" alt="百度（baidu）SEMサービス" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>百度（baidu）の検索連動型広告をはじめ、百度ターゲティング広告など百度に関する様々なプロモーションをご提供。</p>
+</div>
+</div>
+</div>
 
-                        </div><!-- .article_main -->
-                        </div><!-- .article_head -->
-                        <div id="article_foot"><!-- /#article_foot --></div>
-                        
-                        </div><!-- post-content -->
-                    </div><!-- .post -->
-                    {block:IfDisqusShortname}{block:Permalink}
-                        <div id="disqus_thread"></div>
-                        <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
-                        <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">View the discussion thread.</a></noscript>
-                    {/block:Permalink}{/block:IfDisqusShortname}
-                    {block:PostNotes}<div id="post-notes">{PostNotes}</div>{/block:PostNotes}
-                {/block:Posts}
-                {block:Pagination}
-                    <div class="pagination">
-                        {block:PreviousPage}<span class="previous-page"><a href="{PreviousPage}">&#171; Previous</a></span>{/block:PreviousPage}
-                        {block:NextPage}<span class="next-page"><a href="{NextPage}">Next &#187;</a></span>{/block:NextPage}
-                    </div><!-- .pagination -->
-                {/block:Pagination}
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt02.jpg" alt="中国語サイト快速サービス" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/rapid"><img src="http://www.china-adviser.com/img/index/top_box_img02.jpg" alt="中国語サイト快速サービス" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>貴社の中国向けWEBサイトがICP登録不要で、中国北京にあるサーバーで自動的に表示され、表示速度が格段に速くなるサービスです。</p>
+</div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt05.jpg" alt="中国マイクロブログ（微博）PR" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/microblog"><img src="http://www.china-adviser.com/img/index/top_box_img05.jpg" alt="中国マイクロブログ（微博）PR" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>中国でフォロワー10,000人以上をもつ人気マイクロブログ（中国版Twitter）ユーザに企業の商品やサービスを紹介し、その感想をマイクロブロガー本人に紹介してもらうサービスです。</p>
+</div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt06.jpg" alt="中国人気ブロガーPR" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/blogger"><img src="http://www.china-adviser.com/img/index/top_box_img06.jpg" alt="中国人気ブロガーPR" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>中国で100万PVを超える人気ブロガー達に企業の商品やサービスを紹介し、その感想をブロガー本人の人気ブログを通じて紹介してもらうサービスです。</p><br />
+</div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt04.jpg" alt="中国BBS口コミPR" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/bbs"><img src="http://www.china-adviser.com/img/index/top_box_img04.jpg" alt="中国BBS口コミPR" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>中国で人気の大手BBS掲示板で企業の商品やサービスを紹介したスレッドを立て、スレッド内の口コミを活性化させるサービスです。</p>
+</div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt07.jpg" alt="百度百科登録" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/baike"><img src="http://www.china-adviser.com/img/index/top_box_img07.jpg" alt="百度百科登録" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>中国版ウィキペディアである百度百科へ正式登録を行います。百度検索結果の上位表示に頻出するため、中国でのSEO効果と貴社商品の中国での正しい認知が見込めます。</p>
+</div>
+</div>
+</div>
+
+<div class="top-box">
+<h2><img src="http://www.china-adviser.com/img/tumblr/top_tt08.jpg" alt="百度知道登録" /></h2>
+<div class="box-inner clearfix">
+<div class="box-img">
+<a href="/zhidao"><img src="http://www.china-adviser.com/img/index/top_box_img08.jpg" alt="百度知道登録" width="116" height="82" /></a>
+</div>
+<div class="box-txt">
+<p>中国版「Yahoo!知恵袋」のようなQ＆Aサイト百度知道で貴社情報をQ＆A形式で紹介するサービスです。百度百科同様にSEO効果と貴社商品の中国での深い理解が見込めます。</p>
+</div>
+</div>
+</div>
+
                 </div><!-- #content -->
             </div><!-- #container -->
+            
             <div id="sidebar">
             {block:IfShowAboutWidget}
                 <h3>About</h3>
@@ -321,7 +294,6 @@
             </div><!-- #sidebar -->
         </div><!-- #main -->
 
-
 <div id="footer">
     <div id="footer-inner">
         <div id="f-navi" class="clearfix">
@@ -352,7 +324,6 @@
         </div><!--#footer-bottom-->
     </div><!--#footer-inner-->
 </div><!--#footer-->
-
 
     </div><!-- #wrapper -->
 
