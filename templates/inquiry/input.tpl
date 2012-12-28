@@ -12,7 +12,7 @@
 <script type="text/javascript" src="/js/form.js"></script>
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>お問い合わせ | チャイナアドバイザー</title>
 </head>
 <body>

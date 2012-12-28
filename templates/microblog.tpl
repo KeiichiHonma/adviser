@@ -11,7 +11,7 @@
 
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>Weibo（微博）など中国版ツイッターを使ったマイクロブログ・口コミプロモーション | チャイナアドバイザー</title>
 </head>
 <body>

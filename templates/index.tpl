@@ -19,7 +19,7 @@
 {/literal}
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>中国へインターネットで進出支援 | チャイナアドバイザー</title>
 </head>
 <body id="top">
@@ -45,6 +45,7 @@
 <div id="m-image"><img src="/img/index/main_img_top.jpg" alt="" /></div>
 
 <div id="g-navi">
+{include file="include/common/l_navi_blog.inc"}
 {*news*}
 {include file="include/common/news.inc"}
 

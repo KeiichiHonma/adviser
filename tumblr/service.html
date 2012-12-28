@@ -3,9 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{block:IndexPage}{Title}{/block:IndexPage}{block:SearchPage}Search results for: {SearchQuery}{/block:SearchPage}{block:PostSummary}{PostSummary}{/block:PostSummary}</title>
-    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
-    <link rel="shortcut icon" href="{Favicon}" />
+    <title>中国Webマーケティング、プロモーションの最新情報【China Adviser Blog】</title>
+    {block:Description}<meta name="description" content="China Adviser Blogでは中国の最新Webマーケティング、プロモーション、アプリの事例やデータ・レポートを紹介していきます。" />{/block:Description}
+    
+    <link rel="shortcut icon" href="http://www.china-adviser.com/img/common/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="http://www.china-adviser.com/img/common/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
@@ -26,6 +28,14 @@
     <meta name="text:Number of Tweets" content="3"/>
     <meta name="text:Google Analytics ID" content="" />
     <meta name="text:Disqus Shortname" content="" />
+
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="China Adviser Blog" />
+    <meta property="og:title" content="China Adviser Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://blog.china-adviser.com/" />
+    <meta property="og:image" content="http://www.china-adviser.com/img/tumblr/og_blog.png" />
+    <meta property="og:description" content="China Adviser Blog 詳細" />
 
     <style type="text/css" media="screen">
     {CustomCSS}
@@ -86,9 +96,8 @@
         <div id="header">
 
             <div id="branding">
-                <h1>
-                    {block:IfHeaderImage}<img src="{image:Header}" alt="{Title}" />{/block:IfHeaderImage}
-                </h1>
+                <h1>{block:IndexPage}中国Webマーケティング、プロモーション{/block:IndexPage}</h1>
+                {block:IfHeaderImage}<img src="{image:Header}" alt="{Title}" />{/block:IfHeaderImage}
             </div><!-- #branding -->
 
             <div id="global">
@@ -234,8 +243,9 @@
             
             <div id="sidebar">
             {block:IfShowAboutWidget}
-                <h3>About</h3>
+                <h3>中国Webマーケティングリサーチャー</h3>
                 <div id="about" class="widget">
+                    <b>姜 燕楓(キョウ エンフウ)</b><br />
                     <img src="{PortraitURL-64}" alt="portrait" />
                     {block:Description}<div class="description"><p>{Description}</p></div>{/block:Description}
                 </div>
@@ -328,7 +338,6 @@
     </div><!-- #wrapper -->
 
 {block:Twitter}<script type="text/javascript" src="/tweets.js"></script>{/block:Twitter}
-{block:IfGoogleAnalyticsID}<script type="text/javascript">var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try{var pageTracker=_gat._getTracker("{text:Google Analytics ID}");pageTracker._trackPageview()}catch(err){}</script>{block:IfGoogleAnalyticsID}
 {block:IfDisqusShortname}
     <script type="text/javascript">
         //<![CDATA[
@@ -345,5 +354,19 @@
         //]]>
     </script>
 {/block:IfDisqusShortname}
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5207312-11']);
+  _gaq.push(['_setDomainName', 'china-adviser.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>

@@ -11,7 +11,7 @@
 
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>ウェイボー運用・運営代行サービスで中国人へアプローチ | チャイナアドバイザー</title>
 </head>
 <body>

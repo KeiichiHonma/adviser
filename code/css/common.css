@@ -131,8 +131,18 @@ border-left:1px solid #E4E4E4;
 border-right:1px solid #E4E4E4;
 border-bottom:1px solid #E4E4E4;
 }
+
+#g-navi-blog {
+    background:url(/img/tumblr/gnavi_bg.gif) 0 0 repeat-y;
+border-left:1px solid #E4E4E4;
+border-right:1px solid #E4E4E4;
+border-bottom:1px solid #E4E4E4;
+}
+
 #g-navi-new ul li a:link,
 #g-navi-new ul li a:visited,
+#g-navi-blog ul li a:link,
+#g-navi-blog ul li a:visited,
 #g-navi01 ul li a:link,
 #g-navi01 ul li a:visited,
 #g-navi02 ul li a:link,
@@ -159,6 +169,7 @@ text-decoration:none;
 color:#4d4d4d;
 }
 #g-navi-new ul li a:hover,
+#g-navi-blog ul li a:hover,
 #g-navi01 ul li a:hover,
 #g-navi02 ul li a:hover,
 #g-navi03 ul li a:hover,
@@ -238,6 +249,23 @@ margin-bottom:5px;
 
 #g-navi-new ul li.zhidao {
 background:url(/img/common/ico_green2.gif) 0 2px no-repeat;
+font-size:93%;
+padding-left:14px;
+margin-bottom:5px;
+}
+#g-navi-blog p {
+line-height:14px;
+padding:0px 10px 0px 15px;
+}
+
+#g-navi-blog ul {
+/*background:url(/img/tumblr/gnavi_bg.gif) 0 0 repeat-y;*/
+padding:8px 10px 10px 15px;
+margin-bottom:1px;
+}
+#g-navi-blog ul li {
+/*background:url(/img/common/ico_navy.gif) 0 2px no-repeat;*/
+background:url(/img/common/ico_red.gif) 0 2px no-repeat;
 font-size:93%;
 padding-left:14px;
 margin-bottom:5px;

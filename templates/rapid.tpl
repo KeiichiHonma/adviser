@@ -10,7 +10,7 @@
 
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>サーバー、ICP不要で中国語サイトをアクセス改善 | チャイナアドバイザー</title>
 </head>
 <body>

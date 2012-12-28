@@ -11,7 +11,7 @@
 
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>中国のBBS掲示板を使った口コミ・クチコミプロモーション | チャイナアドバイザー</title>
 </head>
 <body>

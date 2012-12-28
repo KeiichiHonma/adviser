@@ -11,7 +11,7 @@
 
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>（Baidu）百度知道登録で中国SEOと貴社商品の理解促進サービス| チャイナアドバイザー</title>
 </head>
 <body>

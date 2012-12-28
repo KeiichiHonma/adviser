@@ -10,7 +10,7 @@
 
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>中国の大手ポータルサイトに記事広告でPR | チャイナアドバイザー</title>
 </head>
 <body>

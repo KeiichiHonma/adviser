@@ -14,3 +14,4 @@
 <li class="navy"><a href="/zhidao">百度知道登録</a></li>
 </ul>
 </div>
+{include file="include/common/l_navi_blog.inc"}

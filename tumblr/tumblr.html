@@ -3,9 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>{block:IndexPage}{Title}{/block:IndexPage}{block:SearchPage}Search results for: {SearchQuery}{/block:SearchPage}{block:PostSummary}{PostSummary}{/block:PostSummary}</title>
-    {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
-    <link rel="shortcut icon" href="{Favicon}" />
+    <title>{block:IndexPage}中国Webマーケティング、プロモーションの最新情報【China Adviser Blog】{/block:IndexPage}{block:SearchPage}Search results for: {SearchQuery}{/block:SearchPage}{block:PostSummary}{PostSummary}【China Adviser Blog】{/block:PostSummary}</title>
+    {block:Description}<meta name="description" content="{block:IndexPage}China Adviser Blogでは中国の最新Webマーケティング、プロモーション、アプリの事例やデータ・レポートを紹介していきます。{/block:IndexPage}{block:PostSummary}{MetaDescription}{/block:PostSummary}" />{/block:Description}
+    
+    <link rel="shortcut icon" href="http://www.china-adviser.com/img/common/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="http://www.china-adviser.com/img/common/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
 
@@ -26,14 +28,54 @@
     <meta name="text:Number of Tweets" content="3"/>
     <meta name="text:Google Analytics ID" content="" />
     <meta name="text:Disqus Shortname" content="" />
-
+    {block:Permalink}
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="China Adviser Blog" />
+    <meta property="og:title" content="{Title}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{Permalink}" />
+    <meta property="og:image" content="http://www.china-adviser.com/img/tumblr/og_blog.png" />
+    <meta property="og:description" content="{Body}" />
+    {/block:Permalink}
+    {block:IndexPage}
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:site_name" content="China Adviser Blog" />
+    <meta property="og:title" content="China Adviser Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://blog.china-adviser.com/" />
+    <meta property="og:image" content="http://www.china-adviser.com/img/tumblr/og_blog.png" />
+    <meta property="og:description" content="China Adviser Blog 詳細" />
+    {/block:IndexPage}
+    
     <style type="text/css" media="screen">
-
     {CustomCSS}
     </style>
 
     <link rel="stylesheet" type="text/css" href="http://www.china-adviser.com/css/tumblr.css"  media="screen" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.china-adviser.com/js/jquery.class.min.js"></script>
+    <script type="text/javascript" src="http://www.china-adviser.com/js/tumblrposts.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        var posts = new TumblrPosts({
+        // ドメインと取得する最大記事数
+        //domain:"blog.china-adviser.com",
+        domain:"china-adviser.tumblr.com",
+        maxNum:300
+        });
+        posts.bind(posts.EVENT_COMPLETE, function(e) {
+        var that = this;
+        // getTags() でタグリストを取得
+        $.each(this.getTags(), function(i, tag) {
+        var html = '<li class="level' + (tag.count % 6 + 1) + '">'
+        + '<a href="/tagged/' + tag.name + '">' + tag.name + '</a></li>';
+        $(html).appendTo($("ul#tags"));
+        });
+        });
+        posts.run();
+        })();
+    </script>
+    
     <script type="text/javascript">
     $(function() {
         var images = $("img");
@@ -47,6 +89,7 @@
             }
         }
     });
+
     function tumblr(resp) {
         var posts = resp.posts;
         $('#blog .loading').replaceWith('<ul/>');
@@ -71,8 +114,6 @@
         }
     }
     </script>
-<link rel="shortcut icon" href="http://www.china-adviser.com/img/common/favicon.ico" type="image/x-icon" />
-<link rel="icon" href="http://www.china-adviser.com/img/common/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 <div id="fb-root"></div>
@@ -88,8 +129,10 @@
         <div id="header">
             <div id="branding">
                 <h1>
-                    {block:IfHeaderImage}<img src="{image:Header}" alt="{Title}" />{/block:IfHeaderImage}
+                {block:IndexPage}中国Webマーケティング、プロモーション{/block:IndexPage}
+                {block:PostSummary}{PostSummary}{/block:PostSummary}
                 </h1>
+                {block:IfHeaderImage}<img src="{image:Header}" alt="{Title}" />{/block:IfHeaderImage}
             </div><!-- #branding -->
 
             <ul id="header_icon">
@@ -100,7 +143,7 @@
 
             <div id="global">
             <ul>
-            <li><img src="http://www.china-adviser.com/img/tumblr/gnavi_home_on.gif" alt="HOME" width="170" height="40"></li>
+            <li><a href="http://blog.china-adviser.com/"><img src="http://www.china-adviser.com/img/tumblr/gnavi_home_on.gif" alt="SERVICE" width="170" height="40"></a></li>
             <li><a href="http://blog.china-adviser.com/archive"><img src="http://www.china-adviser.com/img/tumblr/gnavi_archives_off.gif" alt="ARCHIVES" width="170" height="40"></a></li>
             <li><a href="http://service.china-adviser.com/"><img src="http://www.china-adviser.com/img/tumblr/gnavi_service_off.gif" alt="SERVICE" width="170" height="40"></a></li>
             <li><a href="http://company.china-adviser.com/"><img src="http://www.china-adviser.com/img/tumblr/gnavi_company_off.gif" alt="COMPANY" width="170" height="40"></a></li>
@@ -138,33 +181,29 @@
                         {block:Text}
                             {block:Title}<h2 class="title"><a href="{Permalink}">{Title}</a></h2>{/block:Title}
 
-                        {block:Permalink}
-<div id="block_social_plug_head">
-    <div class="social_plug">
-    <iframe src="//www.facebook.com/plugins/like.php?&amp;href={Permalink}&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-    </div>
+                            <div id="block_social_plug_head">
+                                <div class="social_plug">
+                                <iframe src="//www.facebook.com/plugins/like.php?&amp;href={Permalink}&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+                                </div>
 
-    <div class="social_plug">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{Permalink}">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
+                                <div class="social_plug">
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="{Permalink}">Tweet</a>
+                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                </div>
 
-    <div class="social_plug">
-        <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-size="medium" data-href="{Permalink}"></div>
-        <!-- Place this tag after the last +1 button tag. -->
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-    </div>
-</div>
-
-                        {/block:Permalink}
-
+                                <div class="social_plug">
+                                    <!-- Place this tag where you want the +1 button to render. -->
+                                    <div class="g-plusone" data-size="medium" data-href="{Permalink}"></div>
+                                    <!-- Place this tag after the last +1 button tag. -->
+                                        <script type="text/javascript">
+                                          (function() {
+                                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                            po.src = 'https://apis.google.com/js/plusone.js';
+                                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                          })();
+                                        </script>
+                                </div>
+                            </div>
                             {Body}
                         {/block:Text}
                         {block:Photo}
@@ -209,34 +248,30 @@
                             </div>
                         {/block:HasTags}
 
-                        {block:Permalink}
-<div id="block_social_plug_foot">
-    <div class="social_plug">
-    <iframe src="//www.facebook.com/plugins/like.php?&amp;href={Permalink}&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
-    </div>
+                            <div id="block_social_plug_foot">
+                                <div class="social_plug">
+                                <iframe src="//www.facebook.com/plugins/like.php?&amp;href={Permalink}&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+                                </div>
 
-    <div class="social_plug">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="{Permalink}">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
+                                <div class="social_plug">
+                                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="{Permalink}">Tweet</a>
+                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                                </div>
 
-    <div class="social_plug">
-        <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-size="medium" data-href="{Permalink}"></div>
-        <!-- Place this tag after the last +1 button tag. -->
-            <script type="text/javascript">
-              (function() {
-                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                po.src = 'https://apis.google.com/js/plusone.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
-    </div>
-</div>
-
-                        {/block:Permalink}
-
-                        {block:Permalink}<div class="fb-comments" data-href="{Permalink}" data-width="540" data-num-posts="3"></div>{/block:Permalink}
+                                <div class="social_plug">
+                                    <!-- Place this tag where you want the +1 button to render. -->
+                                    <div class="g-plusone" data-size="medium" data-href="{Permalink}"></div>
+                                    <!-- Place this tag after the last +1 button tag. -->
+                                        <script type="text/javascript">
+                                          (function() {
+                                            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                            po.src = 'https://apis.google.com/js/plusone.js';
+                                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                          })();
+                                        </script>
+                                </div>
+                            </div>
+                            <div class="fb-comments" data-href="{Permalink}" data-width="540" data-num-posts="3"></div>
 
                         </div><!-- .article_main -->
                         </div><!-- .article_head -->
@@ -261,8 +296,9 @@
             </div><!-- #container -->
             <div id="sidebar">
             {block:IfShowAboutWidget}
-                <h3>About</h3>
+                <h3>中国Webマーケティングリサーチャー</h3>
                 <div id="about" class="widget">
+                    <b>姜 燕楓(キョウ エンフウ)</b><br />
                     <img src="{PortraitURL-64}" alt="portrait" />
                     {block:Description}<div class="description"><p>{Description}</p></div>{/block:Description}
                 </div>
@@ -313,6 +349,11 @@
                     <script src="http://blog.china-adviser.com/api/read/json?callback=tumblr&amp;num=10" type="text/javascript"></script>
                 </div>
                 
+                <div id="tag">
+                    <h3>カテゴリ</h3>
+                    <script type="text/javascript" src="http://rive.rs/javascripts/tumblr.min.js?utf8=%E2%9C%93&url=china-adviser.tumblr.com&css=default&minsize=120&maxsize=280"></script>
+                </div>
+                
                 
                 <div class="fb-like-box" data-href="http://www.facebook.com/china.adviser.blog?ref=ts&amp;fref=ts" data-width="310" data-show-faces="true" data-stream="false" data-header="true"></div>
                 
@@ -357,7 +398,6 @@
     </div><!-- #wrapper -->
 
 {block:Twitter}<script type="text/javascript" src="/tweets.js"></script>{/block:Twitter}
-{block:IfGoogleAnalyticsID}<script type="text/javascript">var gaJsHost=(("https:"==document.location.protocol)?"https://ssl.":"http://www.");document.write(unescape("%3Cscript src='"+gaJsHost+"google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try{var pageTracker=_gat._getTracker("{text:Google Analytics ID}");pageTracker._trackPageview()}catch(err){}</script>{block:IfGoogleAnalyticsID}
 {block:IfDisqusShortname}
     <script type="text/javascript">
         //<![CDATA[
@@ -374,5 +414,19 @@
         //]]>
     </script>
 {/block:IfDisqusShortname}
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5207312-11']);
+  _gaq.push(['_setDomainName', 'china-adviser.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>

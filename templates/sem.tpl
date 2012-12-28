@@ -11,7 +11,7 @@
 
 <link rel="shortcut icon" href="/img/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="/img/common/favicon.ico" type="image/x-icon" />
- 
+{include file="include/common/head.inc"}
 <title>成果の出る百度（Baidu バイドゥ）SEM、リスティング広告で中国での売り上げをUP | チャイナアドバイザー</title>
 </head>
 <body>
