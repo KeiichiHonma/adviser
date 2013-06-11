@@ -200,43 +200,6 @@ class base
         return $str;
     }
 
-    public function make_text($string,$isAutoLink = SMARTY_BOOL_ON,$strimbyte = SMARTY_BOOL_OFF){
-        require_once('fw/uri.php');
-        $uri = new uri();
-        if($strimbyte !== SMARTY_BOOL_OFF){
-            $string = $this->mb_strimbyte($string,$strimbyte);
-        }
-        $r = $uri->autolink($string,TRUE,$isAutoLink);
-        $exp = explode("\t",$r);//\t
-        $r_string = '';
-        $bl_before_url = FALSE;
-        $bl_before_end_br = FALSE;
-        $i = 0;
-        foreach ($exp as $key => $value){
-            //現在の値の状況を確認
-            $bl_current_url = preg_match($uri->url_pattern, $value) == 1 ? TRUE : FALSE;
-            $bl_current_end_br = preg_match('/[\r\n]$/', $value);//文末が改行か
-            $bl_current_start_br = preg_match('/^[\r\n]/', $value);//文頭が改行か
-            if($isAutoLink == SMARTY_BOOL_ON && $bl_current_url){
-                if($bl_before_end_br != 1){
-                    if($i == 1 && $exp[0] == ''){
-                    }else{
-                        $r_string .= "\r\n";//直前の文字列が改行で終わっていなければ
-                    }
-                    
-                }
-                $r_string .= $value;
-            }else{
-                if($bl_before_url && $bl_current_start_br == 0) $r_string .= "\r\n";//現在のの文字列が改行で始まっていた場合
-                $r_string .= $value;
-            }
-            $bl_before_url = $bl_current_url;
-            $bl_before_end_br = $bl_current_end_br;
-            $i++;
-        }
-        
-        return $isAutoLink == SMARTY_BOOL_ON ? nl2br($r_string) : $r_string;
-    }
     public function mb_strim_square( $string,$strimbyte = 180,$brLength = 60,$marker = '…',$isAutoLink = SMARTY_BOOL_OFF){
         require_once('fw/uri.php');
         $uri = new uri();
@@ -252,52 +215,6 @@ class base
         $uri = new uri();
         $result1 = $uri->autolink($string,TRUE,$isAutoLink);
         return nl2br($this->checkByteBR($result1,$brLength,$isAutoLink));
-    }
-
-    private function checkByteBR($string,$brLength,$isAutoLink){
-        $exp = explode("\t",$string);//\t
-
-        require_once('fw/uri.php');
-        $uri = new uri();
-
-        $pa = '[a-zA-Z0-9_\(\)\.\/\~\%\:\#\?=&\;\-\+\,]{'.$brLength.',}';
-        $r_string = '';
-        $bl_before_url = FALSE;
-        $bl_before_end_br = FALSE;
-
-        foreach ($exp as $key => $value){
-            //現在の値の状況を確認
-            $bl_current_url = ereg($uri->url_pattern, $value);
-            $bl_current_end_br = preg_match('/[\r\n]$/', $value);//文末が改行か
-            $bl_current_start_br = preg_match('/^[\r\n]/', $value);//文頭が改行か
-            if($isAutoLink == SMARTY_BOOL_ON && $bl_current_url){
-                if($bl_before_end_br != 1) $r_string .= "\r\n";//直前の文字列が改行で終わっていなければ
-                $r_string .= $value;
-            }else{
-                if($bl_before_url && $bl_current_start_br == 0) $r_string .= "\r\n";//現在のの文字列が改行で始まっていた場合
-                $bl = ereg($pa, $value);
-                if($bl !== FALSE){
-                    $result1 = $this->convertSpecial($value);
-                    $result2='';
-                    $int = floor(strlen($result1)/$brLength);
-                    for($i=0;$i<strlen($result1)/$brLength;$i++){
-                        //$result2.=substr($result1,$i*$brLength,$brLength)."\r\n";
-                        if($i < $int){
-                            $result2.=substr($result1,$i*$brLength,$brLength)."\r\n";
-                        }else{
-                            $result2.=substr($result1,$i*$brLength,$brLength);
-                        }
-                        
-                    }
-                    $r_string .= mb_convert_encoding( $result2,'UTF-8','SJIS');
-                }else{
-                    $r_string .= $value;
-                }
-            }
-            $bl_before_url = $bl_current_url;
-            $bl_before_end_br = $bl_current_end_br;
-        }
-        return $r_string;
     }
 
     public function setSEO($array){
