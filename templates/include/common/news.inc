@@ -1,3 +1,4 @@
+{*
     <div id="g-navi-new">
     <h3><img src="/img/common/news_top.jpg" alt="お知らせ" /></h3>
     <ul>
@@ -6,4 +7,4 @@
     <li class="navy"><a href="http://www.k-tsushin.jp/inbound/search/details/008238/" target="blank">2012/4/13<br />「インバウンド観光支援のプロフェッショナル30」に弊社が掲載されました。</a></li>
     </ul>
     </div>
-    
+*}    
