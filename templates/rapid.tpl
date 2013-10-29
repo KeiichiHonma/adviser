@@ -113,7 +113,6 @@ ICP登録をするには中国での身分証及び中国国内の住所や電�
 <div class="wide-img">
 <img src="/img/rapid/ex05_img01.jpg" alt="表示に17秒。見込み顧客であるユーザーが離脱している可能性が非常に高い。" />
 </div>
-<a href="/tool/input" target="_blank"><img src="/img/rapid/banner_tool2_off.jpg" alt="中国向けWEBサイトパフォーマンスツール" /></a>
 </div>
 
 </div>
