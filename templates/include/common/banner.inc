@@ -23,8 +23,3 @@
 <div class="banner">
 <a href="/partner/"><img src="/img/common/banner_partner_off.jpg" alt="セールスパートナーのお問い合わせ" /></a>
 </div>
-
-<div class="banner">
-<a href="http://www.813.co.jp/blog/index/owner/yahagi" target="_blank"><img src="/img/common/blog_banner_y_off.jpg" alt="81代表ブログ" /></a>
-<a href="http://www.813.co.jp/recruit/" target="_blank"><img src="/img/common/recruit_banner.jpg" alt="81採用情報" /></a>
-</div>
