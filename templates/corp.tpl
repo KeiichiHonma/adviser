@@ -48,8 +48,7 @@
     <th>所在地<br />連絡先</th>
     <td>
     <h3 class="subttl">○東京オフィス</h3>
-    〒150-0031<br />
-    <p>東京都渋谷区桜丘町17-12<br />渋谷ジョンソンビル401</p>
+    <p><img src="/img/corp/address.gif" /></p>
     <p>Tel&nbsp;:&nbsp;03-4212-6893</p>
     <p>URL:&nbsp;<a href="http://www.813.co.jp/">http://www.813.co.jp/</a><br />Mail:&nbsp;{mailto address="info@813.co.jp" encode="hex" text="info@813.co.jp"}</p>
     
